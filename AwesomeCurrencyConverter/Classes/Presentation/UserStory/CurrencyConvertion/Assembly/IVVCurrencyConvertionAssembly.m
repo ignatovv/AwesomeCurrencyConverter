@@ -9,7 +9,6 @@
 #import "IVVCurrencyConvertionAssembly.h"
 
 // Factories
-#import "IVVStoryboardAssembly.h"
 #import "IVVServiceAssembly.h"
 #import "IVVHelperAssembly.h"
 

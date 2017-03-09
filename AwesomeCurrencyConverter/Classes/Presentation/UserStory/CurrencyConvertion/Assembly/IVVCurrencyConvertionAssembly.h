@@ -11,12 +11,10 @@
 // Helpers
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
-@class IVVStoryboardAssembly;
 @protocol IVVServiceAssembly, IVVHelperAssembly;
 
 @interface IVVCurrencyConvertionAssembly : TyphoonAssembly <RamblerInitialAssembly>
 
-@property (nonatomic, strong, readonly) IVVStoryboardAssembly *storyboardAssembly;
 @property (nonatomic, strong, readonly) TyphoonAssembly<IVVServiceAssembly> *serviceAssembly;
 @property (nonatomic, strong, readonly) TyphoonAssembly<IVVHelperAssembly> *helperAssembly;
 
