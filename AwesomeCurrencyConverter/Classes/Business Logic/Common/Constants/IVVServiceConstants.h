@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "IVVModelConstants.h"
+
 @class IVVCurrency;
 
 typedef void (^IVVSuccessBlock)(void);
 typedef void (^IVVErrorBlock)(NSError *error);
-typedef void (^IVVCurrencyRatesBlock)(NSArray<IVVCurrency *> *currencyRates);
+typedef void (^IVVCurrencyRatesBlock)(IVVCurrencyRates currencyRates);
