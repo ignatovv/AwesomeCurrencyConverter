@@ -13,11 +13,10 @@
 #import <RamblerTyphoonUtils/AssemblyCollector.h>
 
 @protocol IVVHelperAssembly, IVVCoreComponentsAssembly;
-@class IVVWelocmeAssembly, IVVStoryboardAssembly;
+@class IVVStoryboardAssembly;
 
 @interface IVVServiceAssemblyImplementation : TyphoonAssembly <IVVServiceAssembly, RamblerInitialAssembly>
 
-@property (nonatomic, strong) IVVWelocmeAssembly *welcomeAssembly;
 @property (nonatomic, strong) IVVStoryboardAssembly *storyboardAssembly;
 @property (nonatomic, strong) TyphoonAssembly<IVVHelperAssembly> *helperAssembly;
 @property (nonatomic, strong) TyphoonAssembly<IVVCoreComponentsAssembly> *coreAssembly;

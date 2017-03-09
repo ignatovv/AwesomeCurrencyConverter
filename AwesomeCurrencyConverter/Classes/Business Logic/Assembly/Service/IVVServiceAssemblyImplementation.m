@@ -35,9 +35,6 @@
     return [TyphoonDefinition withClass:[IVVStartUpManagerImplementation class]
                           configuration:^(TyphoonDefinition *definition) {
                               definition.scope = TyphoonScopeLazySingleton;
-                              
-                              [definition injectProperty:@selector(welcomeAssembly)
-                                                    with:self.welcomeAssembly];
                               [definition injectProperty:@selector(storyboardAssembly)
                                                     with:self.storyboardAssembly];
                           }];
