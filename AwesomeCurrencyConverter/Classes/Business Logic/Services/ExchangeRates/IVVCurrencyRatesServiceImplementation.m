@@ -37,13 +37,10 @@
                           
                           // TODO: validate response
                           
-                          dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                              IVVCurrencyRates currencies = [self.mapper mapCurrencyRatesFromResponseObject:responseObject];
-                              currencies = [self enrichCurrencyRatesWithEuroCurrency:currencies];
-                              dispatch_async(dispatch_get_main_queue(), ^{
-                                    succes(currencies);
-                              });
-                          });
+                          IVVCurrencyRates currencies = [self.mapper mapCurrencyRatesFromResponseObject:responseObject];
+                          currencies = [self enrichCurrencyRatesWithEuroCurrency:currencies];
+                          
+                          succes(currencies);
                       }];
 }
 
