@@ -21,6 +21,7 @@
                                       owner:self
                                     options:nil];
         self.view.frame = self.bounds;
+        self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth  | UIViewAutoresizingFlexibleHeight;
         [self addSubview:self.view];
     }
     
