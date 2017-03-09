@@ -1,16 +1,16 @@
 //
-//  IVVCurrencyObject.m
+//  IVVCurrency.m
 //  AwesomeCurrencyConverter
 //
 //  Created by Vladimir Ignatov on 04/03/2017.
 //  Copyright © 2017 Ignatov inc. All rights reserved.
 //
 
-#import "IVVCurrencyObject.h"
+#import "IVVCurrency.h"
 
 static const NSUInteger IVVHashPrimeNumber = 31u;
 
-@implementation IVVCurrencyObject
+@implementation IVVCurrency
 
 #pragma mark - Public methods 
 
@@ -71,7 +71,7 @@ static const NSUInteger IVVHashPrimeNumber = 31u;
     return [self isEqualToObject:object];
 }
 
-- (BOOL)isEqualToObject:(IVVCurrencyObject *)object {
+- (BOOL)isEqualToObject:(IVVCurrency *)object {
     if (self == object)
         return YES;
     

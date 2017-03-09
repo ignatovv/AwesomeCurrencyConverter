@@ -9,7 +9,7 @@
 #import "IVVCurrencyConstants.h"
 #import "IVVModelConstants.h"
 
-@class IVVCurrencyObject;
+@class IVVCurrency;
 
 @protocol IVVCurrencyConverter <NSObject>
 

@@ -9,7 +9,7 @@
 #import "IVVCurrencyRatesServiceMapperImplementation.h"
 
 // Model
-#import "IVVCurrencyObject.h"
+#import "IVVCurrency.h"
 
 // Constants
 #import "IVVAPIConstants.h"
@@ -20,10 +20,10 @@
     id payload = [responseObject valueForKeyPath:IVVAPIPayloadKeyPath];
     NSArray *currencies = [self arrayOfObjectsFromExternalRepresentation:payload
                                                                   forKey:IVVAPIDataKey
-                                                             withMapping:[IVVCurrencyObject objectMapping]];
+                                                             withMapping:[IVVCurrency objectMapping]];
     
     NSMutableArray *filteredCurrencies = [NSMutableArray array];
-    for (IVVCurrencyObject *currency in currencies) {
+    for (IVVCurrency *currency in currencies) {
         if (currency.currencyType != IVVCurrencyTypeUnknown) {
             [filteredCurrencies addObject:currency];
         }

@@ -9,7 +9,7 @@
 #import "IVVCurrencyRatesProviderImplementation.h"
 
 // Model
-#import "IVVCurrencyObject.h"
+#import "IVVCurrency.h"
 
 // Service
 #import "IVVCurrencyRatesService.h"
@@ -47,7 +47,7 @@ static const NSTimeInterval IVVCurrecnyRateUpdateTimeInterval = 30.0;
         return;
     }
     
-    [self.currencyRatesService getCurrencyRatesWithSucces:^(NSArray<IVVCurrencyObject *> *currencyRates) {
+    [self.currencyRatesService getCurrencyRatesWithSucces:^(NSArray<IVVCurrency *> *currencyRates) {
         [self updateCurrencyRates:currencyRates];
         succes(self.currencyRates);
     }
@@ -76,20 +76,20 @@ static const NSTimeInterval IVVCurrecnyRateUpdateTimeInterval = 30.0;
                                           [self stopSchedulingIfNeeded];
                                           
                                           @strongify(self)
-                                          [self.currencyRatesService getCurrencyRatesWithSucces:^(NSArray<IVVCurrencyObject *> *currencyRates) {
+                                          [self.currencyRatesService getCurrencyRatesWithSucces:^(NSArray<IVVCurrency *> *currencyRates) {
                                               [self onCurrencyRatesChange:currencyRates];
                                           } failure:nil];
                                       }];
 }
 
-- (void)onCurrencyRatesChange:(NSArray<IVVCurrencyObject *> *)currencyRates {
+- (void)onCurrencyRatesChange:(NSArray<IVVCurrency *> *)currencyRates {
     BOOL currencyRatesDidChange = [self updateCurrencyRates:currencyRates];
     if (currencyRatesDidChange) {
         [self notifySubscribersWithCurrencyRates:self.currencyRates];
     }
 }
 
-- (BOOL)updateCurrencyRates:(NSArray<IVVCurrencyObject *> *)currencyRates {
+- (BOOL)updateCurrencyRates:(NSArray<IVVCurrency *> *)currencyRates {
     if ([self.currencyRates isEqualToArray:currencyRates]) {
         return NO;
     }
@@ -98,7 +98,7 @@ static const NSTimeInterval IVVCurrecnyRateUpdateTimeInterval = 30.0;
     return YES;
 }
 
-- (void)notifySubscribersWithCurrencyRates:(NSArray<IVVCurrencyObject *> *)currencyRates {
+- (void)notifySubscribersWithCurrencyRates:(NSArray<IVVCurrency *> *)currencyRates {
     NSArray <id<IVVCurrencyRatesProviderSubscriber>> *subscribers = [self.subscribers allObjects];
     for (id<IVVCurrencyRatesProviderSubscriber> subscriber in subscribers) {
         [subscriber currencyRatesDidChange:currencyRates];

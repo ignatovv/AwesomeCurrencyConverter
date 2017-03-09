@@ -8,7 +8,7 @@
 
 #import "IVVModelConstants.h"
 
-@class IVVCurrencyObject, IVVMoneyAmountObject;
+@class IVVCurrency, IVVMoneyAmountObject;
 
 @protocol IVVCurrencyConvertionInteractorOutput <NSObject>
 

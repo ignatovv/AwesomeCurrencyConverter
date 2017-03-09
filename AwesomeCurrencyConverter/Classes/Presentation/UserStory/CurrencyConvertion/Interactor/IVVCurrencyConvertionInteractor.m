@@ -64,7 +64,7 @@
 
 #pragma mark - IVVCurrencyRatesProviderSubscriber
 
-- (void)currencyRatesDidChange:(NSArray<IVVCurrencyObject *> *)currencyRates {
+- (void)currencyRatesDidChange:(NSArray<IVVCurrency *> *)currencyRates {
     [self.output onCurrencyRatesDidChange:currencyRates];
 }
 

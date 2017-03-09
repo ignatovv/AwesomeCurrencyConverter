@@ -8,7 +8,7 @@
 
 #import "IVVModelConstants.h"
 
-@class IVVCurrencyObject;
+@class IVVCurrency;
 
 @protocol IVVCurrencyRatesServiceMapper <NSObject>
 

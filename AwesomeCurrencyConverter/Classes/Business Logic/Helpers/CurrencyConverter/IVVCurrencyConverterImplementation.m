@@ -8,7 +8,7 @@
 
 #import "IVVCurrencyConverterImplementation.h"
 
-#import "IVVCurrencyObject.h"
+#import "IVVCurrency.h"
 
 #import <UIKit/UIKit.h>
 
@@ -20,8 +20,8 @@
                           toCurrency:(IVVCurrencyType)toCurrency
                    withCurrencyRates:(IVVCurrencyRates)currencyRates
                               amount:(NSDecimalNumber *)amount {
-    IVVCurrencyObject *currencyFromRate = [currencyRates currecnyRateWithCurrency:fromCurrency];
-    IVVCurrencyObject *currencyToRate = [currencyRates currecnyRateWithCurrency:toCurrency];
+    IVVCurrency *currencyFromRate = [currencyRates currecnyRateWithCurrency:fromCurrency];
+    IVVCurrency *currencyToRate = [currencyRates currecnyRateWithCurrency:toCurrency];
     
     NSDecimalNumber *currencyRatio = [currencyToRate.currencyRate decimalNumberByDividingBy:currencyFromRate.currencyRate];
     NSDecimalNumber *convertedAmount = [amount decimalNumberByMultiplyingBy:currencyRatio];

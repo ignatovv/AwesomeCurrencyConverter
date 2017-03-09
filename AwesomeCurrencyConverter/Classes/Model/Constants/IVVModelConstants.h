@@ -6,7 +6,7 @@
 //  Copyright © 2017 Ignatov inc. All rights reserved.
 //
 
-@class IVVMoneyAmountObject, IVVCurrencyObject;
+@class IVVMoneyAmountObject, IVVCurrency;
 
-typedef NSArray<IVVCurrencyObject *> * IVVCurrencyRates;
-typedef NSArray<IVVMoneyAmountObject *> * IVVMoneyAmounts;
+typedef NSArray<IVVCurrency *> *IVVCurrencyRates;
+typedef NSArray<IVVMoneyAmountObject *> *IVVMoneyAmounts;
