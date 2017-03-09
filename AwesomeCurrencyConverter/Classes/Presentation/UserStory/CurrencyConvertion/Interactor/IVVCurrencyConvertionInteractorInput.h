@@ -13,7 +13,9 @@
 
 @protocol IVVCurrencyConvertionInteractorInput <NSObject>
 
-- (void)loadInitialData;
+- (void)loadMoneyAmounts;
+
+- (void)loadCurrencyRates;
 
 - (void)exchangeMoney:(NSDecimalNumber *)amount
          fromCurrency:(IVVCurrencyType)fromCurrency

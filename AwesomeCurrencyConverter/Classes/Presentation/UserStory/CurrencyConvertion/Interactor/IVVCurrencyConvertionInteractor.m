@@ -23,10 +23,12 @@
 
 @implementation IVVCurrencyConvertionInteractor
 
-- (void)loadInitialData {
+- (void)loadMoneyAmounts {
     IVVMoneyAmounts moneyAmounts = [self.moneyTransferService obtainCurrentMoneyAmounts];
     [self.output onMoneyAmountsDidChange:moneyAmounts];
-    
+}
+
+- (void)loadCurrencyRates {
     @weakify(self)
     [self.currencyRatesProvider getCurrencyRatesWithSucces:^(IVVCurrencyRates currencyRates) {
         @strongify(self)
@@ -48,9 +50,9 @@
         IVVMoneyAmounts moneyAmounts = [self.moneyTransferService obtainCurrentMoneyAmounts];
         [self.output onMoneyAmountsDidChange:moneyAmounts];
         return;
+    } else {
+        // TODO: Process error
     }
-    
-    // TODO: Process error
 }
 
 

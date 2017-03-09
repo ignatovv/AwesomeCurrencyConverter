@@ -55,7 +55,9 @@
 
 - (void)didTriggerViewDidLoadEvent {
     [self.view setupInitialState];
-    [self.interactor loadInitialData];
+    
+    [self.interactor loadMoneyAmounts];
+    [self.interactor loadCurrencyRates];
     [self.interactor startCurrencyMonitoring];
 }
 
