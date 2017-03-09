@@ -23,10 +23,10 @@
                                                                           currencyRates:(IVVCurrencyRates)currencyRates {
     IVVCurrencyConvertionViewModel *viewModel = [[IVVCurrencyConvertionViewModel alloc] init];
     
-    viewModel.exchangeFromViewModel = [self.exchangeCurrencyFactory exchangeFromListViewModelWithMoneyAmounts:moneyAmounts
+    viewModel.exchangeFromViewModel = [self.exchangeListFactory exchangeFromListViewModelWithMoneyAmounts:moneyAmounts
                                                                                                 currencyRates:currencyRates];
     
-    viewModel.exchangeToViewModel = [self.exchangeCurrencyFactory exchangeToListViewModelWithMoneyAmounts:moneyAmounts
+    viewModel.exchangeToViewModel = [self.exchangeListFactory exchangeToListViewModelWithMoneyAmounts:moneyAmounts
                                                                                             currencyRates:currencyRates];
     
     return viewModel;
@@ -35,10 +35,10 @@
 - (IVVCurrencyConvertionViewModel *)enrichCurrencyConvertionViewModel:(IVVCurrencyConvertionViewModel *)viewModel
                                                     withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel
                                                     exchangeAvaliable:(BOOL)exchangeAvaliable {
-    viewModel.exchangeFromViewModel = [self.exchangeCurrencyFactory enrichExchangeFromListViewModel:viewModel.exchangeFromViewModel
+    viewModel.exchangeFromViewModel = [self.exchangeListFactory enrichExchangeFromListViewModel:viewModel.exchangeFromViewModel
                                                                            withTransactionModel:transactionModel];
     
-    viewModel.exchangeToViewModel = [self.exchangeCurrencyFactory enrichExchangeToListViewModel:viewModel.exchangeToViewModel
+    viewModel.exchangeToViewModel = [self.exchangeListFactory enrichExchangeToListViewModel:viewModel.exchangeToViewModel
                                                                           withTransactionModel:transactionModel];
     
     viewModel.exchangeEnambled = exchangeAvaliable;
