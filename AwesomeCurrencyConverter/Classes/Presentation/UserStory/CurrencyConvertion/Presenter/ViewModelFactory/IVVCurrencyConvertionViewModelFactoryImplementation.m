@@ -10,7 +10,7 @@
 
 // ViewModel
 #import "IVVCurrencyConvertionViewModel.h"
-#import "IVVCurrencyConvertionExchangeModel.h"
+#import "IVVCurrencyTransacrionModel.h"
 
 // Factory
 #import "IVVExchangeCurrencyViewModelFactory.h"
@@ -33,7 +33,7 @@
 }
 
 - (IVVCurrencyConvertionViewModel *)enrichCurrencyConvertionViewModel:(IVVCurrencyConvertionViewModel *)viewModel
-                                                    withExchangeModel:(IVVCurrencyConvertionExchangeModel *)exchangeModel
+                                                    withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel
                                                     exchangeAvaliable:(BOOL)exchangeAvaliable {
     viewModel.exchangeFromViewModel = [self.exchangeCurrencyFactory enrichExchangeFromListViewModel:viewModel.exchangeFromViewModel
                                                                            withExchangeModel:exchangeModel];

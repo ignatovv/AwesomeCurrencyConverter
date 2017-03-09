@@ -16,7 +16,7 @@
 // Model
 #import "IVVMoneyAmount.h"
 #import "IVVCurrency.h"
-#import "IVVCurrencyConvertionExchangeModel.h"
+#import "IVVCurrencyTransacrionModel.h"
 
 // Helpers
 #import "IVVCurrencyConverter.h"
@@ -74,7 +74,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
 }
 
 - (IVVExchangeFromListViewModel *)enrichExchangeFromListViewModel:(IVVExchangeFromListViewModel *)viewModel
-                                                withExchangeModel:(IVVCurrencyConvertionExchangeModel *)exchangeModel {
+                                                withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel {
     NSMutableArray *currencyViewModeles = [NSMutableArray array];
     
     for (IVVExchangeCurrencyFromViewModel *currencyViewModel in viewModel.currencyViewModeles) {
@@ -98,7 +98,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
 }
 
 - (IVVExchangeToListViewModel *)enrichExchangeToListViewModel:(IVVExchangeToListViewModel *)viewModel
-                                            withExchangeModel:(IVVCurrencyConvertionExchangeModel *)exchangeModel {
+                                            withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel {
     NSMutableArray *currencyViewModeles = [NSMutableArray array];
     
     for (IVVExchangeCurrencyToViewModel *currencyViewModel in viewModel.currencyViewModeles) {

@@ -39,7 +39,7 @@
 		B3B23CB01E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CAD1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m */; };
 		B3B23CB11E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B23CAE1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib */; };
 		B3B23CB81E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CB71E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m */; };
-		B3B23CBD1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m */; };
+		B3B23CBD1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.m */; };
 		B3B923881E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B923871E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m */; };
 		B3D0B2841E6AD4B60026469D /* IVVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B24E1E6AD4B60026469D /* IVVAppDelegate.m */; };
 		B3D0B2851E6AD4B60026469D /* IVVServiceAssemblyImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2531E6AD4B60026469D /* IVVServiceAssemblyImplementation.m */; };
@@ -163,8 +163,8 @@
 		B3B23CB51E6C5982009EBDE6 /* IVVExchangeCurrencyViewModelFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyViewModelFactory.h; sourceTree = "<group>"; };
 		B3B23CB61E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyViewModelFactoryImplementation.h; sourceTree = "<group>"; };
 		B3B23CB71E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeCurrencyViewModelFactoryImplementation.m; sourceTree = "<group>"; };
-		B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionExchangeModel.h; sourceTree = "<group>"; };
-		B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionExchangeModel.m; sourceTree = "<group>"; };
+		B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyTransacrionModel.h; sourceTree = "<group>"; };
+		B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyTransacrionModel.m; sourceTree = "<group>"; };
 		B3B923851E6F63030041B51B /* IVVCurrencyRatesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesProvider.h; sourceTree = "<group>"; };
 		B3B923861E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesProviderImplementation.h; sourceTree = "<group>"; };
 		B3B923871E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyRatesProviderImplementation.m; sourceTree = "<group>"; };
@@ -313,7 +313,6 @@
 				B3026AAC1E6CBD06007D7090 /* IVVMoneyStorageImplementation.h */,
 				B3026AAD1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m */,
 			);
-			name = MoneyStorage;
 			path = MoneyStorage;
 			sourceTree = "<group>";
 		};
@@ -621,17 +620,18 @@
 		B3B23CB91E6C67F5009EBDE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B3B23CBA1E6C67FD009EBDE6 /* ExchangeModel */,
+				B3B23CBA1E6C67FD009EBDE6 /* TransactionModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B3B23CBA1E6C67FD009EBDE6 /* ExchangeModel */ = {
+		B3B23CBA1E6C67FD009EBDE6 /* TransactionModel */ = {
 			isa = PBXGroup;
 			children = (
-				B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.h */,
-				B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m */,
+				B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.h */,
+				B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.m */,
 			);
+			name = TransactionModel;
 			path = ExchangeModel;
 			sourceTree = "<group>";
 		};
@@ -1193,7 +1193,7 @@
 				B3B23CAF1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.m in Sources */,
 				B3B23C8A1E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m in Sources */,
 				B3B23C6F1E6B55CE009EBDE6 /* IVVCurrency.m in Sources */,
-				B3B23CBD1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m in Sources */,
+				B3B23CBD1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.m in Sources */,
 				B37C72511E6F673A0008BFAD /* IVVSchedulerImplementation.m in Sources */,
 				B3D0B2861E6AD4B60026469D /* IVVStartUpManagerImplementation.m in Sources */,
 				B3B23C6A1E6B4C85009EBDE6 /* IVVXMLParserImplementation.m in Sources */,

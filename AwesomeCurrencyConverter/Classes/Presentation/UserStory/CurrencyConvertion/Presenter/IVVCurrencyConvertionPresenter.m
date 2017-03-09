@@ -15,7 +15,7 @@
 #import "IVVCurrencyConvertionViewModelFactory.h"
 
 // Model
-#import "IVVCurrencyConvertionExchangeModel.h"
+#import "IVVCurrencyTransacrionModel.h"
 #import "IVVMoneyAmount.h"
 
 // View Model
@@ -35,7 +35,7 @@
 @interface IVVCurrencyConvertionPresenter()
 
 @property (nonatomic, strong) IVVCurrencyConvertionViewModel *viewModel;
-@property (nonatomic, strong) IVVCurrencyConvertionExchangeModel *exchangeModel;
+@property (nonatomic, strong) IVVCurrencyTransacrionModel *exchangeModel;
 
 @end
 
@@ -43,9 +43,9 @@
 
 #pragma mark - Getters / Setters
 
-- (IVVCurrencyConvertionExchangeModel *)exchangeModel {
+- (IVVCurrencyTransacrionModel *)exchangeModel {
     if (_exchangeModel == nil) {
-        _exchangeModel = [[IVVCurrencyConvertionExchangeModel alloc] init];
+        _exchangeModel = [[IVVCurrencyTransacrionModel alloc] init];
     }
     
     return _exchangeModel;

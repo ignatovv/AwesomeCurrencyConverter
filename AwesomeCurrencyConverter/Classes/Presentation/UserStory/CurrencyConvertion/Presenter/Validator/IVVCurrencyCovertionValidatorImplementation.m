@@ -10,21 +10,21 @@
 
 #import "NSArray+IVVMoneyAmounts.h"
 
-#import "IVVCurrencyConvertionExchangeModel.h"
+#import "IVVCurrencyTransacrionModel.h"
 #import "IVVMoneyAmount.h"
 
 static const NSInteger IVVCurrencyConvertionMinimunConvertionAmount = 0;
 
 @implementation IVVCurrencyCovertionValidatorImplementation
 
-- (BOOL)validateTransactionWithTransactionModel:(IVVCurrencyConvertionExchangeModel *)transactionModel {
+- (BOOL)validateTransactionWithTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel {
     IVVMoneyAmount *moneyAmountObject = [transactionModel.moneyAmounts moneyAmountWithCurrency:transactionModel.currencyFromType];
     NSComparisonResult comparisonResult = [moneyAmountObject.moneyAmount compare:transactionModel.exchangeAmount];
     
     return comparisonResult != NSOrderedAscending;
 }
 
-- (BOOL)validateExchangeAvailabilityWithTransactionModel:(IVVCurrencyConvertionExchangeModel *)transactionModel {
+- (BOOL)validateExchangeAvailabilityWithTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel {
     if (transactionModel.currencyToType == transactionModel.currencyFromType) {
         return NO;
     }

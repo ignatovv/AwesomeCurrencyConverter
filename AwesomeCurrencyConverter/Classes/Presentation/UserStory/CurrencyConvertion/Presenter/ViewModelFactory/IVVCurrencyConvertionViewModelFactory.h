@@ -10,7 +10,7 @@
 #import "IVVModelConstants.h"
 
 @class IVVCurrencyConvertionViewModel, IVVExchangeViewModel;
-@class IVVCurrencyConvertionExchangeModel;
+@class IVVCurrencyTransacrionModel;
 
 @protocol IVVCurrencyConvertionViewModelFactory <NSObject>
 
@@ -18,7 +18,7 @@
                                                                           currencyRates:(IVVCurrencyRates)currencyRates;
 
 - (IVVCurrencyConvertionViewModel *)enrichCurrencyConvertionViewModel:(IVVCurrencyConvertionViewModel *)viewModel
-                                                    withExchangeModel:(IVVCurrencyConvertionExchangeModel *)exchangeModel
+                                                    withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel
                                                     exchangeAvaliable:(BOOL)exchangeAvaliable;
 
 @end 

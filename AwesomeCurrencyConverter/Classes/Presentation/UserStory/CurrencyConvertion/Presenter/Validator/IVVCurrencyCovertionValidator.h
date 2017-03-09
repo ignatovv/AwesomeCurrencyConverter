@@ -6,12 +6,12 @@
 //  Copyright © 2017 Ignatov inc. All rights reserved.
 //
 
-@class IVVCurrencyConvertionExchangeModel;
+@class IVVCurrencyTransacrionModel;
 
 @protocol IVVCurrencyCovertionValidator <NSObject>
 
-- (BOOL)validateTransactionWithTransactionModel:(IVVCurrencyConvertionExchangeModel *)transactionModel;
+- (BOOL)validateTransactionWithTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel;
 
-- (BOOL)validateExchangeAvailabilityWithTransactionModel:(IVVCurrencyConvertionExchangeModel *)transactionModel;
+- (BOOL)validateExchangeAvailabilityWithTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel;
 
 @end

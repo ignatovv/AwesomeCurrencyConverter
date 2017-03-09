@@ -7,7 +7,7 @@
 //
 
 @class IVVExchangeFromListViewModel, IVVExchangeToListViewModel;
-@class IVVCurrencyConvertionExchangeModel;
+@class IVVCurrencyTransacrionModel;
 
 #import "IVVCurrencyConstants.h"
 #import "IVVModelConstants.h"
@@ -21,9 +21,9 @@
                                                               currencyRates:(IVVCurrencyRates)currencyRates;
 
 - (IVVExchangeFromListViewModel *)enrichExchangeFromListViewModel:(IVVExchangeFromListViewModel *)viewModel
-                                                withExchangeModel:(IVVCurrencyConvertionExchangeModel *)exchangeModel;
+                                                withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel;
 
 - (IVVExchangeToListViewModel *)enrichExchangeToListViewModel:(IVVExchangeToListViewModel *)viewModel
-                                            withExchangeModel:(IVVCurrencyConvertionExchangeModel *)exchangeModel;
+                                            withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel;
 
 @end
