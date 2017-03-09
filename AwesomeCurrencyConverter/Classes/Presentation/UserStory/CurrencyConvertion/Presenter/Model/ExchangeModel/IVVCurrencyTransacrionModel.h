@@ -14,8 +14,8 @@
 @interface IVVCurrencyTransacrionModel : NSObject
 
 @property (nonatomic, strong) NSDecimalNumber *exchangeAmount;
-@property (nonatomic, assign) IVVCurrencyType currencyFromType;
-@property (nonatomic, assign) IVVCurrencyType currencyToType;
+@property (nonatomic, assign) IVVCurrencyType currencyTypeFrom;
+@property (nonatomic, assign) IVVCurrencyType currencyTypeTo;
 @property (nonatomic, assign) BOOL transactionValid;
 
 @property (nonatomic, strong) IVVCurrencyRates currencyRates;

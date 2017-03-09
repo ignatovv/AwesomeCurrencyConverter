@@ -18,14 +18,14 @@ static const NSInteger IVVCurrencyConvertionMinimunConvertionAmount = 0;
 @implementation IVVCurrencyCovertionValidatorImplementation
 
 - (BOOL)validateTransactionWithTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel {
-    IVVMoneyAmount *moneyAmountObject = [transactionModel.moneyAmounts moneyAmountWithCurrency:transactionModel.currencyFromType];
+    IVVMoneyAmount *moneyAmountObject = [transactionModel.moneyAmounts moneyAmountWithCurrency:transactionModel.currencyTypeFrom];
     NSComparisonResult comparisonResult = [moneyAmountObject.moneyAmount compare:transactionModel.exchangeAmount];
     
     return comparisonResult != NSOrderedAscending;
 }
 
 - (BOOL)validateExchangeAvailabilityWithTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel {
-    if (transactionModel.currencyToType == transactionModel.currencyFromType) {
+    if (transactionModel.currencyTypeTo == transactionModel.currencyTypeFrom) {
         return NO;
     }
     if (transactionModel.exchangeAmount.integerValue <= IVVCurrencyConvertionMinimunConvertionAmount) {

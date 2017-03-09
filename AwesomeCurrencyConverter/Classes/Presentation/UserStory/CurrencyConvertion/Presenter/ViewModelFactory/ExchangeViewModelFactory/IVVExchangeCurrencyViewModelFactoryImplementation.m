@@ -86,7 +86,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
                                                          amount:moneyAmount.moneyAmount];
         currencyViewModel.currencyAmount = moneyAmountString;
         
-        if (transactionModel.currencyFromType == currencyType) {
+        if (transactionModel.currencyTypeFrom == currencyType) {
             currencyViewModel.errorState = !transactionModel.transactionValid;
         }
         
@@ -102,13 +102,13 @@ static NSString * const IVVMoneyAmountZero = @"0";
     NSMutableArray *currencyViewModeles = [NSMutableArray array];
     
     for (IVVExchangeCurrencyToViewModel *currencyViewModel in viewModel.currencyViewModeles) {
-        NSDecimalNumber *exchangeAmount = [self.currencyConverter convertCurrency:transactionModel.currencyFromType
+        NSDecimalNumber *exchangeAmount = [self.currencyConverter convertCurrency:transactionModel.currencyTypeFrom
                                                                        toCurrency:currencyViewModel.currencyType
                                                                 withCurrencyRates:transactionModel.currencyRates
                                                                            amount:transactionModel.exchangeAmount];
         currencyViewModel.exchangeAmount = [self moneyAmountStringWithAmount:exchangeAmount];
         IVVCurrencyType currencyTypeTo = currencyViewModel.currencyType;
-        NSString *exchangeRate = [self exchangeRateWithCurrencyRateTo:transactionModel.currencyFromType
+        NSString *exchangeRate = [self exchangeRateWithCurrencyRateTo:transactionModel.currencyTypeFrom
                                                      CurrencyRateFrom:currencyTypeTo
                                                         currencyRates:transactionModel.currencyRates];
         currencyViewModel.exchangeRate = exchangeRate;

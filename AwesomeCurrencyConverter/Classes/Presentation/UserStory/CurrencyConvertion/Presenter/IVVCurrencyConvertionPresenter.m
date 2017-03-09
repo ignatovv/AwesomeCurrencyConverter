@@ -74,9 +74,9 @@
 - (void)exchangeCurrencyDidChange:(IVVCurrencyType)currencyType
                         convertTo:(BOOL)convertTo {
     if (convertTo == YES) {
-        self.transactionModel.currencyToType = currencyType;
+        self.transactionModel.currencyTypeTo = currencyType;
     } else {
-        self.transactionModel.currencyFromType = currencyType;
+        self.transactionModel.currencyTypeFrom = currencyType;
     }
     
     [self updateView];
@@ -84,8 +84,8 @@
 
 - (void)exchangeInitiated {
     [self.interactor exchangeMoney:self.transactionModel.exchangeAmount
-                      fromCurrency:self.transactionModel.currencyFromType
-                        toCurrency:self.transactionModel.currencyToType
+                      fromCurrency:self.transactionModel.currencyTypeFrom
+                        toCurrency:self.transactionModel.currencyTypeTo
                      currencyRates:self.transactionModel.currencyRates];
 }
 
@@ -129,10 +129,10 @@
                                                                                   currencyRates:self.transactionModel.currencyRates];
     
     // TODO: refactor currency type recieving
-    IVVCurrencyType initialCurrencyFromType = [[self.viewModel.exchangeFromViewModel.currencyViewModeles firstObject] currencyType];
-    IVVCurrencyType initialCurrencyToType = [[self.viewModel.exchangeToViewModel.currencyViewModeles firstObject] currencyType];
-    self.transactionModel.currencyToType = initialCurrencyToType;
-    self.transactionModel.currencyFromType = initialCurrencyFromType;
+    IVVCurrencyType initialCurrencyTypeFrom = [[self.viewModel.exchangeFromViewModel.currencyViewModeles firstObject] currencyType];
+    IVVCurrencyType initialCurrencyTypeTo = [[self.viewModel.exchangeToViewModel.currencyViewModeles firstObject] currencyType];
+    self.transactionModel.currencyTypeTo = initialCurrencyTypeTo;
+    self.transactionModel.currencyTypeFrom = initialCurrencyTypeFrom;
 }
 
 - (void)updateView {
