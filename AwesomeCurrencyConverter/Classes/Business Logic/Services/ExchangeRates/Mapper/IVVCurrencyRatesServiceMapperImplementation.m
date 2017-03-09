@@ -16,7 +16,7 @@
 
 @implementation IVVCurrencyRatesServiceMapperImplementation
 
-- (IVVCurrencyRates)mapCurrencyRatesFromResponseObject:(id)responseObject {
+- (IVVCurrencyRates)mapCurrencyRatesFromResponseObject:(NSDictionary *)responseObject {
     id payload = [responseObject valueForKeyPath:IVVAPIPayloadKeyPath];
     NSArray *currencies = [self arrayOfObjectsFromExternalRepresentation:payload
                                                                   forKey:IVVAPIDataKey

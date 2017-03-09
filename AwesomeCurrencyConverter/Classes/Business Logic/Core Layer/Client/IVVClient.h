@@ -6,13 +6,13 @@
 //  Copyright © 2017 Ignatov inc. All rights reserved.
 //
 
-typedef void(^IVVClientResponse)(id responseObject, NSError *error);
+typedef void(^IVVClientResponse)(NSDictionary *responseObject, NSError *error);
 
 @protocol IVVClient <NSObject>
 
 - (void)getWithEndpoint:(NSString *)endpoint
              parameters:(NSDictionary *)parameters
-             completion:(IVVClientResponse)completionBlock;
+             completion:(IVVClientResponse)completion;
 
 - (void)cancelAllHTTPOperationsWithEndpoint:(NSString *)endpoint;
 

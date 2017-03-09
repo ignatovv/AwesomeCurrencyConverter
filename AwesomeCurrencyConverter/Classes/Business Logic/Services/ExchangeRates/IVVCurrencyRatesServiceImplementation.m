@@ -27,7 +27,7 @@
     NSString *endpoint = [self.configurator urlForCurrencyRates];
     [self.client getWithEndpoint:endpoint
                       parameters:nil
-                      completion:^(id responseObject, NSError *error) {
+                      completion:^(NSDictionary *responseObject, NSError *error) {
                           if (error) {
                               if (failure != nil) {
                                   failure(error);

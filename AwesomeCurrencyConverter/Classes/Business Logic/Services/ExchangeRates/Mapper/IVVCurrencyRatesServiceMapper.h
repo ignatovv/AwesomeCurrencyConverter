@@ -12,6 +12,6 @@
 
 @protocol IVVCurrencyRatesServiceMapper <NSObject>
 
-- (IVVCurrencyRates)mapCurrencyRatesFromResponseObject:(id)responseObject;
+- (IVVCurrencyRates)mapCurrencyRatesFromResponseObject:(NSDictionary *)responseObject;
 
 @end
