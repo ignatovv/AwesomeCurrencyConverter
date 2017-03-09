@@ -73,7 +73,9 @@ static const NSTimeInterval IVVCurrecnyRateUpdateTimeInterval = 30.0;
     @weakify(self)
     [self.scheduler startSchedulingWithTimeInterval:IVVCurrecnyRateUpdateTimeInterval
                                       scheduleBlock:^{
-                                          [self stopSchedulingIfNeeded];
+                                          if ([self stopSchedulingIfNeeded]) {
+                                              return;
+                                          }
                                           
                                           @strongify(self)
                                           [self.currencyRatesService getCurrencyRatesWithSucces:^(IVVCurrencyRates currencyRates) {
@@ -106,10 +108,13 @@ static const NSTimeInterval IVVCurrecnyRateUpdateTimeInterval = 30.0;
 }
 
 // if someone forgot to unsubscribe 
-- (void)stopSchedulingIfNeeded {
+- (BOOL)stopSchedulingIfNeeded {
     if (self.subscribers.allObjects.count == 0) {
         [self.scheduler stopScheduling];
+        return YES;
     }
+    
+    return NO;
 }
 
 #pragma mark - Lifecycle 
