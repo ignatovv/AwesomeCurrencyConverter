@@ -13,7 +13,7 @@
 #import "IVVCurrencyTransacrionModel.h"
 
 // Factory
-#import "IVVExchangeCurrencyViewModelFactory.h"
+#import "IVVExchangeListViewModelFactory.h"
 
 @implementation IVVCurrencyConvertionViewModelFactoryImplementation
 

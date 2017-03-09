@@ -10,10 +10,10 @@
 
 #import "IVVCurrencyConvertionViewModelFactory.h"
 
-@protocol IVVExchangeCurrencyViewModelFactory;
+@protocol IVVExchangeListViewModelFactory;
 
 @interface IVVCurrencyConvertionViewModelFactoryImplementation : NSObject <IVVCurrencyConvertionViewModelFactory>
 
-@property (nonatomic, strong) id<IVVExchangeCurrencyViewModelFactory> exchangeCurrencyFactory;
+@property (nonatomic, strong) id<IVVExchangeListViewModelFactory> exchangeCurrencyFactory;
 
 @end

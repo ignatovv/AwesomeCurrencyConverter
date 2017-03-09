@@ -1,5 +1,5 @@
 //
-//  IVVExchangeCurrencyViewModelFactoryImplementation.h
+//  IVVExchangeListViewModelFactoryImplementation.h
 //  AwesomeCurrencyConverter
 //
 //  Created by Vladimir Ignatov on 05/03/2017.
@@ -12,7 +12,7 @@
 #import "IVVCurrencyConstants.h"
 #import "IVVModelConstants.h"
 
-@protocol IVVExchangeCurrencyViewModelFactory <NSObject>
+@protocol IVVExchangeListViewModelFactory <NSObject>
 
 - (IVVExchangeToListViewModel *)exchangeToListViewModelWithMoneyAmounts:(IVVCurrencyRates)moneyAmounts
                                                           currencyRates:(IVVCurrencyRates)currencyRates;

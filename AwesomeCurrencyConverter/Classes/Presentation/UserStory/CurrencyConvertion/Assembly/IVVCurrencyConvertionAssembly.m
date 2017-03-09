@@ -20,7 +20,7 @@
 
 // Factory
 #import "IVVCurrencyConvertionViewModelFactoryImplementation.h"
-#import "IVVExchangeCurrencyViewModelFactoryImplementation.h"
+#import "IVVExchangeListViewModelFactoryImplementation.h"
 
 // Validator
 #import "IVVCurrencyCovertionValidatorImplementation.h"
@@ -96,8 +96,8 @@
                           }];
 }
 
-- (id<IVVExchangeCurrencyViewModelFactory>)exchangeCurrencyViewModelFactory {
-    return [TyphoonDefinition withClass:[IVVExchangeCurrencyViewModelFactoryImplementation class] configuration:^(TyphoonDefinition *definition) {
+- (id<IVVExchangeListViewModelFactory>)exchangeCurrencyViewModelFactory {
+    return [TyphoonDefinition withClass:[IVVExchangeListViewModelFactoryImplementation class] configuration:^(TyphoonDefinition *definition) {
             definition.scope = TyphoonScopeWeakSingleton;
             [definition injectProperty:@selector(currencyConverter)
                                   with:[self.helperAssembly currencyConverter]];

@@ -1,5 +1,5 @@
 //
-//  IVVExchangeCurrencyViewModelFactoryImplementation.m
+//  IVVExchangeListViewModelFactoryImplementation.m
 //  AwesomeCurrencyConverter
 //
 //  Created by Vladimir Ignatov on 05/03/2017.
@@ -26,7 +26,7 @@
 #import "NSArray+IVVMoneyAmounts.h"
 #import "NSDecimalNumber+IVVUtilities.h"
 
-#import "IVVExchangeCurrencyViewModelFactoryImplementation.h"
+#import "IVVExchangeListViewModelFactoryImplementation.h"
 
 static NSString * const IVVMoneyAmountMask = @"You have %@%@";
 static NSString * const IVVExchangeRateMask = @"%@%@ = %@%@";
@@ -34,7 +34,7 @@ static NSString * const IVVExchangeRateMask = @"%@%@ = %@%@";
 static NSString * const IVVMoneyAmountOne = @"1";
 static NSString * const IVVMoneyAmountZero = @"0";
 
-@implementation IVVExchangeCurrencyViewModelFactoryImplementation
+@implementation IVVExchangeListViewModelFactoryImplementation
 
 #pragma mark - Public methods
 
