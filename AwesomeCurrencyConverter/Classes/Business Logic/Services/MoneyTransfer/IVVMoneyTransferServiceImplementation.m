@@ -28,13 +28,7 @@ static NSString * const IVVInitialMoneyAmount = @"100.00";
     // inital amountInitialization
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSDecimalNumber *initalMoneyAmount = [NSDecimalNumber decimalNumberWithString:IVVInitialMoneyAmount];
-        [self.moneyStorage setMoneyAmount:initalMoneyAmount
-                              forCurrency:IVVCurrencyTypeUSD];
-        [self.moneyStorage setMoneyAmount:initalMoneyAmount
-                              forCurrency:IVVCurrencyTypeGBP];
-        [self.moneyStorage setMoneyAmount:initalMoneyAmount
-                              forCurrency:IVVCurrencyTypeEUR];
+        [self setInitialMoneyAmounts];
     });
     
     NSMutableArray *moneyAmounts = [NSMutableArray array];
@@ -81,6 +75,16 @@ static NSString * const IVVInitialMoneyAmount = @"100.00";
     IVVMoneyAmount *amountObject =[[IVVMoneyAmount alloc] initWithCurrencyType:currency
                                                                                moneyAmount:amount];
     return amountObject;
+}
+
+- (void)setInitialMoneyAmounts {
+    NSDecimalNumber *initalMoneyAmount = [NSDecimalNumber decimalNumberWithString:IVVInitialMoneyAmount];
+    [self.moneyStorage setMoneyAmount:initalMoneyAmount
+                          forCurrency:IVVCurrencyTypeUSD];
+    [self.moneyStorage setMoneyAmount:initalMoneyAmount
+                          forCurrency:IVVCurrencyTypeGBP];
+    [self.moneyStorage setMoneyAmount:initalMoneyAmount
+                          forCurrency:IVVCurrencyTypeEUR];
 }
 
 @end
