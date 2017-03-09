@@ -13,6 +13,7 @@
 #import "IVVCurrencyTransacrionModel.h"
 #import "IVVMoneyAmount.h"
 
+// minimum amount of transaction is 1
 static const NSInteger IVVCurrencyConvertionMinimunConvertionAmount = 0;
 
 @implementation IVVCurrencyCovertionValidatorImplementation

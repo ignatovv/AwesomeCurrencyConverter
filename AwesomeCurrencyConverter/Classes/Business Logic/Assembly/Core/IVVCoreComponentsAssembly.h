@@ -10,6 +10,9 @@
 @protocol IVVPresistentStore;
 @protocol IVVScheduler;
 
+/**
+ Factory for core components
+ */
 @protocol IVVCoreComponentsAssembly <NSObject>
 
 - (id<IVVClient>)XMLCapableClient;

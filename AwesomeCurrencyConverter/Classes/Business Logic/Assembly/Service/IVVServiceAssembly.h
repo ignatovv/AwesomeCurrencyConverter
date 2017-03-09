@@ -9,6 +9,9 @@
 @protocol IVVStartUpManager, IVVCurrencyRatesService, IVVMoneyTransferService;
 @protocol IVVMoneyStorage;
 
+/**
+ Factory for services
+ */
 @protocol IVVServiceAssembly <NSObject>
 
 - (id<IVVStartUpManager>)startupService;

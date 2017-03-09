@@ -69,6 +69,7 @@
     return [[[self listViewModelForView:exchangeView] currencyViewModeles] count];
 }
 
+// Load view dynamicaly with class from the view model 
 - (UIView *)exchangeView:(IVVExchangeView *)exchangeView
       viewForItemAtIndex:(NSInteger)index
              reusingView:(UIView<IVVDynamicView> *)view {

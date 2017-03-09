@@ -6,6 +6,9 @@
 //  Copyright © 2017 Ignatov inc. All rights reserved.
 //
 
+/**
+ Configurator provides urls and parameters for service requests
+ */
 @protocol IVVCurrencyRatesServiceConfigurator <NSObject>
 
 - (NSString *)urlForCurrencyRates;

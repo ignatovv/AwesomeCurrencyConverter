@@ -21,6 +21,9 @@
 
 @end
 
+/**
+ Manges exchange view delegate and data source
+ */
 @interface IVVCurrencyConvertionDataDisplayManager : NSObject
 
 @property (nonatomic, weak) id<IVVCurrencyConvertionDataDisplayManagerDelegate>delegate;

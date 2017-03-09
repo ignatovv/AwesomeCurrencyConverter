@@ -8,7 +8,11 @@
 
 @protocol IVVCurrencyConverter;
 @protocol IVVCurrencyRatesProvider;
+@protocol IVVMoneyStorage;
 
+/**
+ Factory for helper object
+ */
 @protocol IVVHelperAssembly <NSObject>
 
 - (id<IVVCurrencyConverter>)currencyConverter;
