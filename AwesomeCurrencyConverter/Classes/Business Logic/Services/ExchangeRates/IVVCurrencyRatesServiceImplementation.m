@@ -46,7 +46,7 @@
 
 // TODO: ask backend to deploy new api
 - (IVVCurrencyRates)enrichCurrencyRatesWithEuroCurrency:(IVVCurrencyRates)currencyRates {
-    NSDecimalNumber *currencyRate = [NSDecimalNumber decimalNumberWithString:@"1.0000"];
+    NSDecimalNumber *currencyRate = [NSDecimalNumber one];
     IVVCurrency *currency = [[IVVCurrency alloc] initWithType:IVVCurrencyTypeEUR
                                                                      rate:currencyRate];
     NSMutableArray *enrichedCurrencyRates = [NSMutableArray arrayWithArray:currencyRates];

@@ -11,7 +11,6 @@
 #pragma mark - API endpoints
 
 extern NSString * const IVVAPIBaseURL;
-
 extern NSString * const IVVCurrencyRatesURL;
 
 #pragma mark - API response keys

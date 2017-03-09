@@ -8,6 +8,4 @@
 
 @protocol IVVCurrencyConvertionRouterInput <NSObject>
 
-
-
 @end

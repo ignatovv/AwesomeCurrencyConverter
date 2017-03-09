@@ -14,6 +14,6 @@
 
 @interface IVVCurrencyConvertionViewModelFactoryImplementation : NSObject <IVVCurrencyConvertionViewModelFactory>
 
-@property (nonatomic, strong) id<IVVExchangeListViewModelFactory> exchangeCurrencyFactory;
+@property (nonatomic, strong) id<IVVExchangeListViewModelFactory> exchangeListFactory;
 
 @end

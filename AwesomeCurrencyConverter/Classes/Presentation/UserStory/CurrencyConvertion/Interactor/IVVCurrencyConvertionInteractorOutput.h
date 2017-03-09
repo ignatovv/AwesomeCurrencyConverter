@@ -13,6 +13,7 @@
 @protocol IVVCurrencyConvertionInteractorOutput <NSObject>
 
 - (void)onMoneyAmountsDidChange:(IVVMoneyAmounts)moneyAmounts;
+
 - (void)onCurrencyRatesDidChange:(IVVCurrencyRates)currencyRates;
 
 @end

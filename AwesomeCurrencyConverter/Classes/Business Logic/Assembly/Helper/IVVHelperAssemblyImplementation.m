@@ -17,7 +17,6 @@
 #import "IVVCurrencyRatesProviderImplementation.h"
 #import "IVVMoneyStorageImplementation.h"
 
-
 @implementation IVVHelperAssemblyImplementationImplementation
 
 - (id<IVVCurrencyConverter>)currencyConverter {

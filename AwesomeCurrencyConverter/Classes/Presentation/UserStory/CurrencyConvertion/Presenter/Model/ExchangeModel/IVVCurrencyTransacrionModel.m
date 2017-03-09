@@ -10,12 +10,12 @@
 
 @implementation IVVCurrencyTransacrionModel
 
-- (NSDecimalNumber *)exchangeAmount {
-    if (_exchangeAmount == nil) {
+- (instancetype)init {
+    if (self = [super init]) {
         _exchangeAmount = [NSDecimalNumber zero];
     }
     
-    return _exchangeAmount;
+    return self;
 }
 
 @end

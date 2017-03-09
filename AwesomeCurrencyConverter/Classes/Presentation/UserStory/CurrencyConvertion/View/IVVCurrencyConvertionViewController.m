@@ -79,7 +79,7 @@
 #pragma mark - IVVCurrencyConvertionDataDisplayManagerDelegate
 
 - (void)currencyDidChange:(IVVCurrencyType)currencytype
-       forConvertToView:(BOOL)convertTo {
+         forConvertToView:(BOOL)convertTo {
     [self.output exchangeCurrencyDidChange:currencytype
                                  convertTo:convertTo];
 }

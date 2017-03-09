@@ -15,7 +15,7 @@
 @interface IVVClientImplementation : AFHTTPSessionManager <IVVClient>
 
 - (instancetype)initWithStringBaseUrl:(NSString *)baseUrl
-                   responseSerializer:(AFHTTPResponseSerializer <AFURLResponseSerialization> *)responseSerializer
+                   responseSerializer:(AFHTTPResponseSerializer *)responseSerializer
                                parser:(id<IVVParser>) parser;
 
 @end

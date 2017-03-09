@@ -34,6 +34,7 @@
                toViewModel:(IVVExchangeToListViewModel *)toViewModel;
 
 - (id<IVVExchangeViewDelegate>)delegateForExchangeView:(IVVExchangeView *)exchangeView;
+
 - (id<IVVExchangeViewDataSource>)dataSourceForExchangeView:(IVVExchangeView *)exchangeView;
 
 @end

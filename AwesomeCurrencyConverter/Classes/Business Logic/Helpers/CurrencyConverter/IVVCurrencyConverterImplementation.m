@@ -10,8 +10,6 @@
 
 #import "IVVCurrency.h"
 
-#import <UIKit/UIKit.h>
-
 #import "NSArray+IVVCurrencyRates.h"
 
 @implementation IVVCurrencyConverterImplementation

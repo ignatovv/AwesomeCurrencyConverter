@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong) IVVExchangeToListViewModel *exchangeToViewModel;
 @property (nonatomic, strong) IVVExchangeFromListViewModel *exchangeFromViewModel;
-
 @property (nonatomic, assign) BOOL exchangeEnambled;
 
 @end

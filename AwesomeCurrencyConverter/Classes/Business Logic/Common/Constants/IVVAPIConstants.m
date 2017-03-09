@@ -11,7 +11,6 @@
 #pragma mark - API endpoints
 
 NSString * const IVVAPIBaseURL = @"https://www.ecb.europa.eu/";
-
 NSString * const IVVCurrencyRatesURL = @"stats/eurofxref/eurofxref-daily.xml";
 
 #pragma mark - API response keys

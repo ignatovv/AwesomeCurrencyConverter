@@ -91,7 +91,7 @@
 - (id<IVVCurrencyConvertionViewModelFactory>)currencyConvertionViewModelFactory {
     return [TyphoonDefinition withClass:[IVVCurrencyConvertionViewModelFactoryImplementation class]
                           configuration:^(TyphoonDefinition *definition) {
-                              [definition injectProperty:@selector(exchangeCurrencyFactory)
+                              [definition injectProperty:@selector(exchangeListFactory)
                                                     with:[self exchangeCurrencyViewModelFactory]];
                           }];
 }
