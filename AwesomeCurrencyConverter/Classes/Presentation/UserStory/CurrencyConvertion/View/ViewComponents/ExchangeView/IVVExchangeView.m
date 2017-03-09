@@ -29,7 +29,8 @@
         [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class])
                                       owner:self
                                     options:nil];
-        self.view.frame = self.bounds;        
+        self.view.frame = self.bounds;
+        self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth  | UIViewAutoresizingFlexibleHeight;
         [self addSubview:self.view];
     }
     
@@ -39,16 +40,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     [self setupView];
-}
-
-- (BOOL)becomeFirstResponder {
-    return [self.carouserlView.currentItemView becomeFirstResponder];
-}
-
-- (void)layoutSubviews {
-    [self.carouserlView reloadData];
-    [self.carouserlView layoutSubviews];
-    [self.pageControll layoutSubviews];
 }
 
 #pragma mark - Public methods 
@@ -64,10 +55,9 @@
 - (void)setupView {
     self.carouserlView.pagingEnabled = YES;
     self.carouserlView.type = iCarouselTypeLinear;
+    
     self.carouserlView.delegate = self;
     self.carouserlView.dataSource = self;
-    
-    [self.carouserlView insertItemAtIndex:0 animated:NO];
 }
 
 #pragma mark - iCarouselDataSource
@@ -87,7 +77,7 @@
 #pragma mark - iCarouselDelegate
 
 - (CGFloat)carouselItemWidth:(iCarousel *)carousel {
-    return self.view.frame.size.width;
+    return CGRectGetWidth(self.view.frame);
 }
 
 - (void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel {
