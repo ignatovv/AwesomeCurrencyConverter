@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="EXCHANGE"/>
                                 <connections>
-                                    <segue destination="3v3-KT-2ma" kind="show" id="KcB-qf-0AC"/>
+                                    <segue destination="iHx-SC-JUh" kind="show" id="Qwa-wt-REq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,104 +56,13 @@
             </objects>
             <point key="canvasLocation" x="-382" y="-72"/>
         </scene>
-        <!--Currency Convertion View Controller-->
-        <scene sceneID="9Mt-yT-eK6">
+        <!--CuurencyConvertion-->
+        <scene sceneID="sQy-H6-EID">
             <objects>
-                <viewController storyboardIdentifier="IVVCurrencyConvertionViewController" extendedLayoutIncludesOpaqueBars="YES" id="3v3-KT-2ma" customClass="IVVCurrencyConvertionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gez-s2-mna"/>
-                        <viewControllerLayoutGuide type="bottom" id="7cm-Xb-k9s"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mOI-lh-anR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKz-fV-GhS">
-                                <rect key="frame" x="175" y="318.5" width="25" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="proxyTextFieldEditingChanged:" destination="3v3-KT-2ma" eventType="editingChanged" id="pSH-9L-37C"/>
-                                    <outlet property="delegate" destination="3v3-KT-2ma" id="NVs-To-cPz"/>
-                                </connections>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ZVV-oc-XH0" userLabel="Background Image">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDd-Nn-Qua" userLabel="Container View">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <view userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtd-td-fFb">
-                                        <rect key="frame" x="0.0" y="309" width="375" height="293.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" restorationIdentifier="exchangeFormView" translatesAutoresizingMaskIntoConstraints="NO" id="yK7-f2-hGk" userLabel="Convert From View" customClass="TyphoonLoadedView">
-                                        <rect key="frame" x="0.0" y="8" width="375" height="301.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" restorationIdentifier="exchangeToView" translatesAutoresizingMaskIntoConstraints="NO" id="xLr-Q7-MSn" userLabel="Convert ToView" customClass="TyphoonLoadedView">
-                                        <rect key="frame" x="0.0" y="309" width="375" height="293.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="Vtd-td-fFb" firstAttribute="trailing" secondItem="xLr-Q7-MSn" secondAttribute="trailing" id="Aqf-q8-F7f"/>
-                                    <constraint firstItem="xLr-Q7-MSn" firstAttribute="top" secondItem="yK7-f2-hGk" secondAttribute="bottom" id="ECF-gP-StF"/>
-                                    <constraint firstItem="yK7-f2-hGk" firstAttribute="top" secondItem="VDd-Nn-Qua" secondAttribute="topMargin" id="H0D-G4-WpC"/>
-                                    <constraint firstItem="yK7-f2-hGk" firstAttribute="height" secondItem="VDd-Nn-Qua" secondAttribute="height" multiplier="1/2" id="PUA-Qw-6rA"/>
-                                    <constraint firstItem="Vtd-td-fFb" firstAttribute="leading" secondItem="xLr-Q7-MSn" secondAttribute="leading" id="RlS-rW-ySS"/>
-                                    <constraint firstItem="xLr-Q7-MSn" firstAttribute="leading" secondItem="VDd-Nn-Qua" secondAttribute="leading" id="agY-la-9eX"/>
-                                    <constraint firstAttribute="trailing" secondItem="xLr-Q7-MSn" secondAttribute="trailing" id="erS-dt-HbJ"/>
-                                    <constraint firstItem="yK7-f2-hGk" firstAttribute="leading" secondItem="VDd-Nn-Qua" secondAttribute="leading" id="fpO-c8-1Bi"/>
-                                    <constraint firstItem="Vtd-td-fFb" firstAttribute="top" secondItem="xLr-Q7-MSn" secondAttribute="top" id="mW1-mB-SmT"/>
-                                    <constraint firstAttribute="bottom" secondItem="xLr-Q7-MSn" secondAttribute="bottom" id="w4a-n9-hGu"/>
-                                    <constraint firstAttribute="trailing" secondItem="yK7-f2-hGk" secondAttribute="trailing" id="z6F-i0-W4y"/>
-                                    <constraint firstItem="Vtd-td-fFb" firstAttribute="bottom" secondItem="xLr-Q7-MSn" secondAttribute="bottom" id="zEv-HC-1r4"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZVV-oc-XH0" secondAttribute="trailing" id="89N-83-4IR"/>
-                            <constraint firstItem="VDd-Nn-Qua" firstAttribute="top" secondItem="Gez-s2-mna" secondAttribute="bottom" id="GX7-TD-3ER"/>
-                            <constraint firstItem="NKz-fV-GhS" firstAttribute="centerX" secondItem="mOI-lh-anR" secondAttribute="centerX" id="HIj-hu-nrm"/>
-                            <constraint firstItem="ZVV-oc-XH0" firstAttribute="leading" secondItem="mOI-lh-anR" secondAttribute="leading" id="SeV-uW-6L5"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ZVV-oc-XH0" secondAttribute="bottom" id="gwi-mO-Zdz"/>
-                            <constraint firstItem="NKz-fV-GhS" firstAttribute="centerY" secondItem="mOI-lh-anR" secondAttribute="centerY" id="naZ-wT-ibj"/>
-                            <constraint firstAttribute="trailing" secondItem="VDd-Nn-Qua" secondAttribute="trailing" id="oOf-Dw-sG0"/>
-                            <constraint firstItem="VDd-Nn-Qua" firstAttribute="leading" secondItem="mOI-lh-anR" secondAttribute="leading" id="pxp-fL-jQP"/>
-                            <constraint firstItem="7cm-Xb-k9s" firstAttribute="top" secondItem="VDd-Nn-Qua" secondAttribute="bottom" id="qhC-CO-hPh"/>
-                            <constraint firstItem="ZVV-oc-XH0" firstAttribute="top" secondItem="mOI-lh-anR" secondAttribute="topMargin" id="wSV-tb-uIj"/>
-                        </constraints>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="0qv-gD-qe7">
-                        <barButtonItem key="rightBarButtonItem" title="Exchange" id="gf6-hd-ETw">
-                            <connections>
-                                <action selector="onExchangeButtonTapped:" destination="3v3-KT-2ma" id="eFQ-sp-bgc"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="containerViewBottomConstraint" destination="qhC-CO-hPh" id="ZYb-H8-sAe"/>
-                        <outlet property="convertFromView" destination="yK7-f2-hGk" id="ZrQ-BR-Sp0"/>
-                        <outlet property="convertToView" destination="xLr-Q7-MSn" id="D9Z-IQ-YKp"/>
-                        <outlet property="exchangeButton" destination="gf6-hd-ETw" id="M3v-6v-Sv1"/>
-                        <outlet property="textFieldProxy" destination="NKz-fV-GhS" id="j0C-Q4-fUl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RtK-8w-vlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="CuurencyConvertion" id="iHx-SC-JUh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTA-8u-Thb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="-72"/>
+            <point key="canvasLocation" x="255" y="-73"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Background" width="248" height="464"/>
-    </resources>
 </document>

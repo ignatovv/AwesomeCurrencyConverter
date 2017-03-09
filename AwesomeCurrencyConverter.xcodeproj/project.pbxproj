@@ -62,6 +62,7 @@
 		B3E79E211E706EA90019CEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E1E1E706EA90019CEF6 /* main.m */; };
 		B3E79E261E706EED0019CEF6 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E241E706EED0019CEF6 /* EXTScope.m */; };
 		B3E79E2A1E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */; };
+		B3ED43A31E71DB7800E13694 /* CuurencyConvertion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3ED43A21E71DB7800E13694 /* CuurencyConvertion.storyboard */; };
 		BBFC84412D3606B1E6B2F6D2 /* libPods-AwesomeCurrencyConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */; };
 		FFDEF676A41E20CB4C9F3C4E /* libPods-AwesomeCurrencyConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */; };
 /* End PBXBuildFile section */
@@ -219,6 +220,7 @@
 		B3E79E251E706EED0019CEF6 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		B3E79E281E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+IVVUtilities.h"; sourceTree = "<group>"; };
 		B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+IVVUtilities.m"; sourceTree = "<group>"; };
+		B3ED43A21E71DB7800E13694 /* CuurencyConvertion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CuurencyConvertion.storyboard; sourceTree = "<group>"; };
 		C5D43E3A0A01380C3FBC6363 /* Pods-AwesomeCurrencyConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCurrencyConverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCurrencyConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -744,6 +746,7 @@
 		B3D0B25B1E6AD4B60026469D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B3D0B26B1E6AD4B60026469D /* Main.storyboard */,
 				B3D0B25E1E6AD4B60026469D /* Common */,
 				B3D0B2661E6AD4B60026469D /* UserStory */,
 				B3D0B25C1E6AD4B60026469D /* LaunchScreen.storyboard */,
@@ -792,7 +795,6 @@
 			children = (
 				B3D0B2671E6AD4B60026469D /* CurrencyConvertion */,
 				B3026AA01E6CB0E8007D7090 /* Welcome */,
-				B3D0B26B1E6AD4B60026469D /* Main.storyboard */,
 			);
 			path = UserStory;
 			sourceTree = "<group>";
@@ -805,6 +807,7 @@
 				B3D0B2721E6AD4B60026469D /* Presenter */,
 				B3D0B2761E6AD4B60026469D /* Router */,
 				B3D0B27A1E6AD4B60026469D /* View */,
+				B3ED43A21E71DB7800E13694 /* CuurencyConvertion.storyboard */,
 			);
 			path = CurrencyConvertion;
 			sourceTree = "<group>";
@@ -1058,6 +1061,7 @@
 				B3D0B28C1E6AD4B60026469D /* Main.storyboard in Resources */,
 				B3B23CB11E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib in Resources */,
 				B3D0B2911E6AD4B60026469D /* Assets.xcassets in Resources */,
+				B3ED43A31E71DB7800E13694 /* CuurencyConvertion.storyboard in Resources */,
 				B339FAC11E6AEC8000D62268 /* IVVExchangeView.xib in Resources */,
 				B3D0B2881E6AD4B60026469D /* LaunchScreen.storyboard in Resources */,
 				B339FAC81E6AFC5A00D62268 /* IVVExchangeCurrencyFromView.xib in Resources */,
@@ -1256,7 +1260,7 @@
 				B3D0B26C1E6AD4B60026469D /* Base */,
 			);
 			name = Main.storyboard;
-			path = .;
+			path = UserStory/.;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
