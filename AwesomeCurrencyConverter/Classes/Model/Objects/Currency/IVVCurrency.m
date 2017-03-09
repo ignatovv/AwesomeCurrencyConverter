@@ -8,7 +8,7 @@
 
 #import "IVVCurrency.h"
 
-static const NSUInteger IVVHashPrimeNumber = 31u;
+#import "IVVModelConstants.h"
 
 @implementation IVVCurrency
 

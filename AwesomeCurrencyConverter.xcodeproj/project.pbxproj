@@ -63,6 +63,7 @@
 		B3E79E261E706EED0019CEF6 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E241E706EED0019CEF6 /* EXTScope.m */; };
 		B3E79E2A1E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */; };
 		B3ED43A31E71DB7800E13694 /* CuurencyConvertion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3ED43A21E71DB7800E13694 /* CuurencyConvertion.storyboard */; };
+		B3ED43A51E71DEED00E13694 /* IVVModelConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ED43A41E71DEED00E13694 /* IVVModelConstants.m */; };
 		BBFC84412D3606B1E6B2F6D2 /* libPods-AwesomeCurrencyConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */; };
 		FFDEF676A41E20CB4C9F3C4E /* libPods-AwesomeCurrencyConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */; };
 /* End PBXBuildFile section */
@@ -221,6 +222,7 @@
 		B3E79E281E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+IVVUtilities.h"; sourceTree = "<group>"; };
 		B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+IVVUtilities.m"; sourceTree = "<group>"; };
 		B3ED43A21E71DB7800E13694 /* CuurencyConvertion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CuurencyConvertion.storyboard; sourceTree = "<group>"; };
+		B3ED43A41E71DEED00E13694 /* IVVModelConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVModelConstants.m; sourceTree = "<group>"; };
 		C5D43E3A0A01380C3FBC6363 /* Pods-AwesomeCurrencyConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCurrencyConverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCurrencyConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -550,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				B3B23C911E6C249E009EBDE6 /* IVVModelConstants.h */,
+				B3ED43A41E71DEED00E13694 /* IVVModelConstants.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -1208,6 +1211,7 @@
 				B3E79E091E7019510019CEF6 /* IVVExchangeFromListViewModel.m in Sources */,
 				B3B23C861E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m in Sources */,
 				B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmount.m in Sources */,
+				B3ED43A51E71DEED00E13694 /* IVVModelConstants.m in Sources */,
 				B3D0B28B1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m in Sources */,
 				B3D0B2901E6AD4B60026469D /* IVVCurrencyConvertionViewController.m in Sources */,
 				B3D0B28F1E6AD4B60026469D /* IVVCurrencyConvertionRouter.m in Sources */,

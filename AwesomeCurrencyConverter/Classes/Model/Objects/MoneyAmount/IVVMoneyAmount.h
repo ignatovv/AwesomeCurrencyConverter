@@ -1,5 +1,5 @@
 //
-//  IVVMoneyAmountObject.h
+//  IVVMoneyAmount.h
 //  AwesomeCurrencyConverter
 //
 //  Created by Vladimir Ignatov on 05/03/2017.
@@ -10,7 +10,7 @@
 
 #import "IVVCurrencyConstants.h"
 
-@interface IVVMoneyAmountObject : NSObject
+@interface IVVMoneyAmount : NSObject
 
 @property (nonatomic, assign, readonly) IVVCurrencyType currencyType;
 @property (nonatomic, strong, readonly) NSDecimalNumber *moneyAmount;

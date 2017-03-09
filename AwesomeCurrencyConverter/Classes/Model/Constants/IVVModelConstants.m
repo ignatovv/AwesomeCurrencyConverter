@@ -8,6 +8,5 @@
 
 #import "IVVModelConstants.h"
 
-@implementation IVVModelConstants
+const NSUInteger IVVHashPrimeNumber = 31u;
 
-@end
