@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "Abstract_Blue_Circle_Bokeh_Background_iphone_5s_parallax_wallpaper_ilikewallpaper_com.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Abstract_Blue_Circle_Bokeh_Background_iphone_5s_parallax_wallpaper_ilikewallpaper_com@2x.jpg",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Abstract_Blue_Circle_Bokeh_Background_iphone_5s_parallax_wallpaper_ilikewallpaper_com@3x.jpg",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

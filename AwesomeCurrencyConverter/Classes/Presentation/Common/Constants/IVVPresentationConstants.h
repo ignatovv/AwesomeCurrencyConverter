@@ -1,0 +1,17 @@
+//
+//  IVVPresentationConstants.h
+//  AwesomeCurrencyConverter
+//
+//  Created by Vladimir Ignatov on 04/03/2017.
+//  Copyright © 2017 Ignatov inc. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface IVVPresentationConstants : NSObject
+
+#pragma mark - Storyboard Names
+
+extern NSString * const IVVMainUserStoryName;
+
+@end

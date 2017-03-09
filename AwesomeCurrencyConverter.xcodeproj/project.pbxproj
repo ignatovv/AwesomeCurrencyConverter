@@ -1,0 +1,1519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3026A9F1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3026A9E1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.m */; };
+		B3026AA31E6CB0FC007D7090 /* IVVWelocmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3026AA21E6CB0FC007D7090 /* IVVWelocmeViewController.m */; };
+		B3026AAE1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3026AAD1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m */; };
+		B3026AB51E6CBE42007D7090 /* IVVPresistentStoreImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3026AB41E6CBE42007D7090 /* IVVPresistentStoreImplementation.m */; };
+		B3026AB91E6CC643007D7090 /* IVVHelperAssemblyImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3026AB81E6CC643007D7090 /* IVVHelperAssemblyImplementation.m */; };
+		B3026ABE1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3026ABD1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.m */; };
+		B339FABF1E6AEC6B00D62268 /* IVVExchangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FABE1E6AEC6B00D62268 /* IVVExchangeView.m */; };
+		B339FAC11E6AEC8000D62268 /* IVVExchangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B339FAC01E6AEC8000D62268 /* IVVExchangeView.xib */; };
+		B339FAC61E6AFC4900D62268 /* IVVExchangeCurrencyFromView.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FAC51E6AFC4900D62268 /* IVVExchangeCurrencyFromView.m */; };
+		B339FAC81E6AFC5A00D62268 /* IVVExchangeCurrencyFromView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B339FAC71E6AFC5A00D62268 /* IVVExchangeCurrencyFromView.xib */; };
+		B339FACD1E6B22EA00D62268 /* IVVClientImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FACC1E6B22EA00D62268 /* IVVClientImplementation.m */; };
+		B339FAD31E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FAD21E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.m */; };
+		B339FAD91E6B2E9A00D62268 /* IVVAPIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B339FAD81E6B2E9A00D62268 /* IVVAPIConstants.m */; };
+		B33B7A341E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B33B7A331E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.m */; };
+		B37C72511E6F673A0008BFAD /* IVVSchedulerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C72501E6F673A0008BFAD /* IVVSchedulerImplementation.m */; };
+		B37C72631E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C72621E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.m */; };
+		B3B23C6A1E6B4C85009EBDE6 /* IVVXMLParserImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C691E6B4C85009EBDE6 /* IVVXMLParserImplementation.m */; };
+		B3B23C6F1E6B55CE009EBDE6 /* IVVCurrencyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C6E1E6B55CE009EBDE6 /* IVVCurrencyObject.m */; };
+		B3B23C761E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C751E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.m */; };
+		B3B23C7C1E6B5F25009EBDE6 /* IVVMapperImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C7B1E6B5F25009EBDE6 /* IVVMapperImplementation.m */; };
+		B3B23C831E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C821E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m */; };
+		B3B23C861E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C851E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m */; };
+		B3B23C8A1E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C891E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m */; };
+		B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmountObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmountObject.m */; };
+		B3B23C951E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C941E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m */; };
+		B3B23C9A1E6C2FE7009EBDE6 /* IVVServiceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C991E6C2FE7009EBDE6 /* IVVServiceConstants.m */; };
+		B3B23C9E1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C9D1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m */; };
+		B3B23CA21E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CA11E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.m */; };
+		B3B23CAF1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CAB1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.m */; };
+		B3B23CB01E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CAD1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m */; };
+		B3B23CB11E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B23CAE1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib */; };
+		B3B23CB81E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CB71E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m */; };
+		B3B23CBD1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m */; };
+		B3B923881E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B923871E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m */; };
+		B3D0B2841E6AD4B60026469D /* IVVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B24E1E6AD4B60026469D /* IVVAppDelegate.m */; };
+		B3D0B2851E6AD4B60026469D /* IVVServiceAssemblyImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2531E6AD4B60026469D /* IVVServiceAssemblyImplementation.m */; };
+		B3D0B2861E6AD4B60026469D /* IVVStartUpManagerImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2571E6AD4B60026469D /* IVVStartUpManagerImplementation.m */; };
+		B3D0B2871E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2591E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodeld */; };
+		B3D0B2881E6AD4B60026469D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D0B25C1E6AD4B60026469D /* LaunchScreen.storyboard */; };
+		B3D0B2891E6AD4B60026469D /* IVVStoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2621E6AD4B60026469D /* IVVStoryboardAssembly.m */; };
+		B3D0B28A1E6AD4B60026469D /* IVVPresentationConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2651E6AD4B60026469D /* IVVPresentationConstants.m */; };
+		B3D0B28B1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B26A1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m */; };
+		B3D0B28C1E6AD4B60026469D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D0B26B1E6AD4B60026469D /* Main.storyboard */; };
+		B3D0B28D1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B26F1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.m */; };
+		B3D0B28E1E6AD4B60026469D /* IVVCurrencyConvertionPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2751E6AD4B60026469D /* IVVCurrencyConvertionPresenter.m */; };
+		B3D0B28F1E6AD4B60026469D /* IVVCurrencyConvertionRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B2781E6AD4B60026469D /* IVVCurrencyConvertionRouter.m */; };
+		B3D0B2901E6AD4B60026469D /* IVVCurrencyConvertionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0B27C1E6AD4B60026469D /* IVVCurrencyConvertionViewController.m */; };
+		B3D0B2911E6AD4B60026469D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D0B2801E6AD4B60026469D /* Assets.xcassets */; };
+		B3E79E091E7019510019CEF6 /* IVVExchangeFromListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E081E7019510019CEF6 /* IVVExchangeFromListViewModel.m */; };
+		B3E79E0D1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E0C1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.m */; };
+		B3E79E141E7051490019CEF6 /* NSArray+IVVCurrencyRates.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E131E7051490019CEF6 /* NSArray+IVVCurrencyRates.m */; };
+		B3E79E171E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E161E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.m */; };
+		B3E79E211E706EA90019CEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E1E1E706EA90019CEF6 /* main.m */; };
+		B3E79E261E706EED0019CEF6 /* EXTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E241E706EED0019CEF6 /* EXTScope.m */; };
+		B3E79E2A1E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */; };
+		BBFC84412D3606B1E6B2F6D2 /* libPods-AwesomeCurrencyConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */; };
+		FFDEF676A41E20CB4C9F3C4E /* libPods-AwesomeCurrencyConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3D0B23C1E6AD3EA0026469D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3D0B2171E6AD3EA0026469D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3D0B21E1E6AD3EA0026469D;
+			remoteInfo = AwesomeCurrencyConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E7D8D1FC8E08AE2494E4876 /* Pods-AwesomeCurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverter/Pods-AwesomeCurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
+		33FB32296F2ACC4D85609B08 /* Pods-AwesomeCurrencyConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverter/Pods-AwesomeCurrencyConverter.debug.xcconfig"; sourceTree = "<group>"; };
+		B3026A9C1E6C9EA5007D7090 /* IVVCurrencyConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConverter.h; sourceTree = "<group>"; };
+		B3026A9D1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConverterImplementation.h; sourceTree = "<group>"; };
+		B3026A9E1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConverterImplementation.m; sourceTree = "<group>"; };
+		B3026AA11E6CB0FC007D7090 /* IVVWelocmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVWelocmeViewController.h; sourceTree = "<group>"; };
+		B3026AA21E6CB0FC007D7090 /* IVVWelocmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVWelocmeViewController.m; sourceTree = "<group>"; };
+		B3026AAC1E6CBD06007D7090 /* IVVMoneyStorageImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyStorageImplementation.h; sourceTree = "<group>"; };
+		B3026AAD1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyStorageImplementation.m; sourceTree = "<group>"; };
+		B3026AAF1E6CBD17007D7090 /* IVVMoneyStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVMoneyStorage.h; sourceTree = "<group>"; };
+		B3026AB21E6CBE02007D7090 /* IVVPresistentStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVPresistentStore.h; sourceTree = "<group>"; };
+		B3026AB31E6CBE42007D7090 /* IVVPresistentStoreImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVPresistentStoreImplementation.h; sourceTree = "<group>"; };
+		B3026AB41E6CBE42007D7090 /* IVVPresistentStoreImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVPresistentStoreImplementation.m; sourceTree = "<group>"; };
+		B3026AB71E6CC643007D7090 /* IVVHelperAssemblyImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVHelperAssemblyImplementation.h; sourceTree = "<group>"; };
+		B3026AB81E6CC643007D7090 /* IVVHelperAssemblyImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVHelperAssemblyImplementation.m; sourceTree = "<group>"; };
+		B3026ABB1E6CE37E007D7090 /* IVVCurrencyCovertionValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyCovertionValidator.h; sourceTree = "<group>"; };
+		B3026ABC1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyCovertionValidatorImplementation.h; sourceTree = "<group>"; };
+		B3026ABD1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyCovertionValidatorImplementation.m; sourceTree = "<group>"; };
+		B339FABD1E6AEC6B00D62268 /* IVVExchangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeView.h; sourceTree = "<group>"; };
+		B339FABE1E6AEC6B00D62268 /* IVVExchangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeView.m; sourceTree = "<group>"; };
+		B339FAC01E6AEC8000D62268 /* IVVExchangeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IVVExchangeView.xib; sourceTree = "<group>"; };
+		B339FAC41E6AFC4900D62268 /* IVVExchangeCurrencyFromView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyFromView.h; sourceTree = "<group>"; };
+		B339FAC51E6AFC4900D62268 /* IVVExchangeCurrencyFromView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeCurrencyFromView.m; sourceTree = "<group>"; };
+		B339FAC71E6AFC5A00D62268 /* IVVExchangeCurrencyFromView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IVVExchangeCurrencyFromView.xib; sourceTree = "<group>"; };
+		B339FACB1E6B22EA00D62268 /* IVVClientImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVClientImplementation.h; sourceTree = "<group>"; };
+		B339FACC1E6B22EA00D62268 /* IVVClientImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVClientImplementation.m; sourceTree = "<group>"; };
+		B339FACF1E6B22FB00D62268 /* IVVClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVClient.h; sourceTree = "<group>"; };
+		B339FAD11E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesServiceImplementation.h; sourceTree = "<group>"; };
+		B339FAD21E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyRatesServiceImplementation.m; sourceTree = "<group>"; };
+		B339FAD41E6B2C3800D62268 /* IVVCurrencyRatesService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesService.h; sourceTree = "<group>"; };
+		B339FAD71E6B2E8700D62268 /* IVVAPIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVAPIConstants.h; sourceTree = "<group>"; };
+		B339FAD81E6B2E9A00D62268 /* IVVAPIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVAPIConstants.m; sourceTree = "<group>"; };
+		B33B7A321E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVApplicationAssemblyImplementation.h; sourceTree = "<group>"; };
+		B33B7A331E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVApplicationAssemblyImplementation.m; sourceTree = "<group>"; };
+		B33B7A351E6ADD23003D47E7 /* IVVApplicationAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVApplicationAssembly.h; sourceTree = "<group>"; };
+		B37C724E1E6F66C10008BFAD /* IVVScheduler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVScheduler.h; sourceTree = "<group>"; };
+		B37C724F1E6F673A0008BFAD /* IVVSchedulerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVSchedulerImplementation.h; sourceTree = "<group>"; };
+		B37C72501E6F673A0008BFAD /* IVVSchedulerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVSchedulerImplementation.m; sourceTree = "<group>"; };
+		B37C725E1E6F750D0008BFAD /* IVVHelperAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVHelperAssembly.h; sourceTree = "<group>"; };
+		B37C72601E6F76210008BFAD /* IVVCoreComponentsAssembly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCoreComponentsAssembly.h; sourceTree = "<group>"; };
+		B37C72611E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCoreComponentsAssemblyImplementation.h; sourceTree = "<group>"; };
+		B37C72621E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCoreComponentsAssemblyImplementation.m; sourceTree = "<group>"; };
+		B3B23C671E6B4BF5009EBDE6 /* IVVParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVParser.h; sourceTree = "<group>"; };
+		B3B23C681E6B4C85009EBDE6 /* IVVXMLParserImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVXMLParserImplementation.h; sourceTree = "<group>"; };
+		B3B23C691E6B4C85009EBDE6 /* IVVXMLParserImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVXMLParserImplementation.m; sourceTree = "<group>"; };
+		B3B23C6D1E6B55CE009EBDE6 /* IVVCurrencyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyObject.h; sourceTree = "<group>"; };
+		B3B23C6E1E6B55CE009EBDE6 /* IVVCurrencyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyObject.m; sourceTree = "<group>"; };
+		B3B23C741E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesServiceMapperImplementation.h; sourceTree = "<group>"; };
+		B3B23C751E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyRatesServiceMapperImplementation.m; sourceTree = "<group>"; };
+		B3B23C771E6B5C8A009EBDE6 /* IVVCurrencyRatesServiceMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesServiceMapper.h; sourceTree = "<group>"; };
+		B3B23C791E6B5F0D009EBDE6 /* IVVMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVMapper.h; sourceTree = "<group>"; };
+		B3B23C7A1E6B5F25009EBDE6 /* IVVMapperImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMapperImplementation.h; sourceTree = "<group>"; };
+		B3B23C7B1E6B5F25009EBDE6 /* IVVMapperImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMapperImplementation.m; sourceTree = "<group>"; };
+		B3B23C811E6C1F60009EBDE6 /* IVVExchangeToListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeToListViewModel.h; sourceTree = "<group>"; };
+		B3B23C821E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeToListViewModel.m; sourceTree = "<group>"; };
+		B3B23C841E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyFromViewModel.h; sourceTree = "<group>"; };
+		B3B23C851E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeCurrencyFromViewModel.m; sourceTree = "<group>"; };
+		B3B23C881E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyTransferServiceImplementation.h; sourceTree = "<group>"; };
+		B3B23C891E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyTransferServiceImplementation.m; sourceTree = "<group>"; };
+		B3B23C8B1E6C240F009EBDE6 /* IVVMoneyTransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVMoneyTransferService.h; sourceTree = "<group>"; };
+		B3B23C8D1E6C2475009EBDE6 /* IVVMoneyAmountObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyAmountObject.h; sourceTree = "<group>"; };
+		B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmountObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyAmountObject.m; sourceTree = "<group>"; };
+		B3B23C911E6C249E009EBDE6 /* IVVModelConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVModelConstants.h; sourceTree = "<group>"; };
+		B3B23C931E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesServiceConfiguratorImplementation.h; sourceTree = "<group>"; };
+		B3B23C941E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyRatesServiceConfiguratorImplementation.m; sourceTree = "<group>"; };
+		B3B23C961E6C2EFA009EBDE6 /* IVVCurrencyRatesServiceConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesServiceConfigurator.h; sourceTree = "<group>"; };
+		B3B23C981E6C2FE7009EBDE6 /* IVVServiceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVServiceConstants.h; sourceTree = "<group>"; };
+		B3B23C991E6C2FE7009EBDE6 /* IVVServiceConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVServiceConstants.m; sourceTree = "<group>"; };
+		B3B23C9C1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionViewModelFactoryImplementation.h; sourceTree = "<group>"; };
+		B3B23C9D1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionViewModelFactoryImplementation.m; sourceTree = "<group>"; };
+		B3B23C9F1E6C36CA009EBDE6 /* IVVCurrencyConvertionViewModelFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionViewModelFactory.h; sourceTree = "<group>"; };
+		B3B23CA01E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionViewModel.h; sourceTree = "<group>"; };
+		B3B23CA11E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionViewModel.m; sourceTree = "<group>"; };
+		B3B23CA61E6C48B1009EBDE6 /* IVVDynamicViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVDynamicViewModel.h; sourceTree = "<group>"; };
+		B3B23CA71E6C48F5009EBDE6 /* IVVDynamicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVDynamicView.h; sourceTree = "<group>"; };
+		B3B23CAA1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyToViewModel.h; sourceTree = "<group>"; };
+		B3B23CAB1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeCurrencyToViewModel.m; sourceTree = "<group>"; };
+		B3B23CAC1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyToView.h; sourceTree = "<group>"; };
+		B3B23CAD1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeCurrencyToView.m; sourceTree = "<group>"; };
+		B3B23CAE1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IVVExchangeCurrencyToView.xib; sourceTree = "<group>"; };
+		B3B23CB31E6C5155009EBDE6 /* IVVExchangeCurrencyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyConstants.h; sourceTree = "<group>"; };
+		B3B23CB51E6C5982009EBDE6 /* IVVExchangeCurrencyViewModelFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyViewModelFactory.h; sourceTree = "<group>"; };
+		B3B23CB61E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeCurrencyViewModelFactoryImplementation.h; sourceTree = "<group>"; };
+		B3B23CB71E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeCurrencyViewModelFactoryImplementation.m; sourceTree = "<group>"; };
+		B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionExchangeModel.h; sourceTree = "<group>"; };
+		B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionExchangeModel.m; sourceTree = "<group>"; };
+		B3B923851E6F63030041B51B /* IVVCurrencyRatesProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesProvider.h; sourceTree = "<group>"; };
+		B3B923861E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesProviderImplementation.h; sourceTree = "<group>"; };
+		B3B923871E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyRatesProviderImplementation.m; sourceTree = "<group>"; };
+		B3D0B21F1E6AD3EA0026469D /* AwesomeCurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeCurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D0B23B1E6AD3EA0026469D /* AwesomeCurrencyConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeCurrencyConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3D0B23F1E6AD3EB0026469D /* AwesomeCurrencyConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeCurrencyConverterTests.m; sourceTree = "<group>"; };
+		B3D0B2411E6AD3EB0026469D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D0B24D1E6AD4B60026469D /* IVVAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVAppDelegate.h; sourceTree = "<group>"; };
+		B3D0B24E1E6AD4B60026469D /* IVVAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVAppDelegate.m; sourceTree = "<group>"; };
+		B3D0B2511E6AD4B60026469D /* IVVServiceAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVServiceAssembly.h; sourceTree = "<group>"; };
+		B3D0B2521E6AD4B60026469D /* IVVServiceAssemblyImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVServiceAssemblyImplementation.h; sourceTree = "<group>"; };
+		B3D0B2531E6AD4B60026469D /* IVVServiceAssemblyImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVServiceAssemblyImplementation.m; sourceTree = "<group>"; };
+		B3D0B2551E6AD4B60026469D /* IVVStartUpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVStartUpManager.h; sourceTree = "<group>"; };
+		B3D0B2561E6AD4B60026469D /* IVVStartUpManagerImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVStartUpManagerImplementation.h; sourceTree = "<group>"; };
+		B3D0B2571E6AD4B60026469D /* IVVStartUpManagerImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVStartUpManagerImplementation.m; sourceTree = "<group>"; };
+		B3D0B25A1E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AwesomeCurrencyConverter.xcdatamodel; sourceTree = "<group>"; };
+		B3D0B25D1E6AD4B60026469D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3D0B2611E6AD4B60026469D /* IVVStoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVStoryboardAssembly.h; sourceTree = "<group>"; };
+		B3D0B2621E6AD4B60026469D /* IVVStoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVStoryboardAssembly.m; sourceTree = "<group>"; };
+		B3D0B2641E6AD4B60026469D /* IVVPresentationConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVPresentationConstants.h; sourceTree = "<group>"; };
+		B3D0B2651E6AD4B60026469D /* IVVPresentationConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVPresentationConstants.m; sourceTree = "<group>"; };
+		B3D0B2691E6AD4B60026469D /* IVVCurrencyConvertionAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionAssembly.h; sourceTree = "<group>"; };
+		B3D0B26A1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionAssembly.m; sourceTree = "<group>"; };
+		B3D0B26C1E6AD4B60026469D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3D0B26E1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionInteractor.h; sourceTree = "<group>"; };
+		B3D0B26F1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IVVCurrencyConvertionInteractor.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B3D0B2701E6AD4B60026469D /* IVVCurrencyConvertionInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionInteractorInput.h; sourceTree = "<group>"; };
+		B3D0B2711E6AD4B60026469D /* IVVCurrencyConvertionInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = IVVCurrencyConvertionInteractorOutput.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B3D0B2741E6AD4B60026469D /* IVVCurrencyConvertionPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionPresenter.h; sourceTree = "<group>"; };
+		B3D0B2751E6AD4B60026469D /* IVVCurrencyConvertionPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IVVCurrencyConvertionPresenter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B3D0B2771E6AD4B60026469D /* IVVCurrencyConvertionRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionRouter.h; sourceTree = "<group>"; };
+		B3D0B2781E6AD4B60026469D /* IVVCurrencyConvertionRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionRouter.m; sourceTree = "<group>"; };
+		B3D0B2791E6AD4B60026469D /* IVVCurrencyConvertionRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionRouterInput.h; sourceTree = "<group>"; };
+		B3D0B27B1E6AD4B60026469D /* IVVCurrencyConvertionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionViewController.h; sourceTree = "<group>"; };
+		B3D0B27C1E6AD4B60026469D /* IVVCurrencyConvertionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionViewController.m; sourceTree = "<group>"; };
+		B3D0B27D1E6AD4B60026469D /* IVVCurrencyConvertionViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionViewInput.h; sourceTree = "<group>"; };
+		B3D0B27E1E6AD4B60026469D /* IVVCurrencyConvertionViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConvertionViewOutput.h; sourceTree = "<group>"; };
+		B3D0B2801E6AD4B60026469D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E79E051E7016700019CEF6 /* IVVExchangeListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVExchangeListViewModel.h; sourceTree = "<group>"; };
+		B3E79E071E7019510019CEF6 /* IVVExchangeFromListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVExchangeFromListViewModel.h; sourceTree = "<group>"; };
+		B3E79E081E7019510019CEF6 /* IVVExchangeFromListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVExchangeFromListViewModel.m; sourceTree = "<group>"; };
+		B3E79E0B1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = IVVCurrencyConvertionDataDisplayManager.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		B3E79E0C1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyConvertionDataDisplayManager.m; sourceTree = "<group>"; };
+		B3E79E0E1E7050840019CEF6 /* IVVCurrencyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyConstants.h; sourceTree = "<group>"; };
+		B3E79E121E7051490019CEF6 /* NSArray+IVVCurrencyRates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IVVCurrencyRates.h"; sourceTree = "<group>"; };
+		B3E79E131E7051490019CEF6 /* NSArray+IVVCurrencyRates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IVVCurrencyRates.m"; sourceTree = "<group>"; };
+		B3E79E151E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IVVMoneyAmounts.h"; sourceTree = "<group>"; };
+		B3E79E161E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IVVMoneyAmounts.m"; sourceTree = "<group>"; };
+		B3E79E1B1E706EA90019CEF6 /* AwesomeCurrencyConverter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AwesomeCurrencyConverter-Prefix.pch"; path = "AwesomeCurrencyConverter-Prefix.pch"; sourceTree = "<group>"; };
+		B3E79E1D1E706EA90019CEF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
+		B3E79E1E1E706EA90019CEF6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = main.m; sourceTree = "<group>"; };
+		B3E79E231E706EED0019CEF6 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = EXTScope.h; sourceTree = "<group>"; };
+		B3E79E241E706EED0019CEF6 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = EXTScope.m; sourceTree = "<group>"; };
+		B3E79E251E706EED0019CEF6 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = metamacros.h; sourceTree = "<group>"; };
+		B3E79E281E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+IVVUtilities.h"; sourceTree = "<group>"; };
+		B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+IVVUtilities.m"; sourceTree = "<group>"; };
+		C5D43E3A0A01380C3FBC6363 /* Pods-AwesomeCurrencyConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCurrencyConverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeCurrencyConverter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC9B29664A7DD2411EDBECC /* Pods-AwesomeCurrencyConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3D0B21C1E6AD3EA0026469D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFC84412D3606B1E6B2F6D2 /* libPods-AwesomeCurrencyConverter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D0B2381E6AD3EA0026469D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDEF676A41E20CB4C9F3C4E /* libPods-AwesomeCurrencyConverterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C35AC4F430AE3C3ACA78C38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33FB32296F2ACC4D85609B08 /* Pods-AwesomeCurrencyConverter.debug.xcconfig */,
+				1E7D8D1FC8E08AE2494E4876 /* Pods-AwesomeCurrencyConverter.release.xcconfig */,
+				FFC9B29664A7DD2411EDBECC /* Pods-AwesomeCurrencyConverterTests.debug.xcconfig */,
+				C5D43E3A0A01380C3FBC6363 /* Pods-AwesomeCurrencyConverterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3026A9B1E6C9E7E007D7090 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3026AA91E6CBCD3007D7090 /* CurrencyConverter */,
+				B3B923841E6F62E60041B51B /* CuurencyProvider */,
+				B3026ABF1E6DE996007D7090 /* StartUpManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B3026AA01E6CB0E8007D7090 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B3026AA41E6CB14E007D7090 /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B3026AA41E6CB14E007D7090 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3026AA11E6CB0FC007D7090 /* IVVWelocmeViewController.h */,
+				B3026AA21E6CB0FC007D7090 /* IVVWelocmeViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3026AA91E6CBCD3007D7090 /* CurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				B3026A9C1E6C9EA5007D7090 /* IVVCurrencyConverter.h */,
+				B3026A9D1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.h */,
+				B3026A9E1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.m */,
+			);
+			path = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		B3026AAB1E6CBCE7007D7090 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B3026AB01E6CBDC7007D7090 /* MoneyStorage */,
+				B3026AB11E6CBDEA007D7090 /* PresistentStore */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B3026AB01E6CBDC7007D7090 /* MoneyStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B3026AAF1E6CBD17007D7090 /* IVVMoneyStorage.h */,
+				B3026AAC1E6CBD06007D7090 /* IVVMoneyStorageImplementation.h */,
+				B3026AAD1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m */,
+			);
+			path = MoneyStorage;
+			sourceTree = "<group>";
+		};
+		B3026AB11E6CBDEA007D7090 /* PresistentStore */ = {
+			isa = PBXGroup;
+			children = (
+				B3026AB21E6CBE02007D7090 /* IVVPresistentStore.h */,
+				B3026AB31E6CBE42007D7090 /* IVVPresistentStoreImplementation.h */,
+				B3026AB41E6CBE42007D7090 /* IVVPresistentStoreImplementation.m */,
+			);
+			path = PresistentStore;
+			sourceTree = "<group>";
+		};
+		B3026AB61E6CC634007D7090 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B37C725E1E6F750D0008BFAD /* IVVHelperAssembly.h */,
+				B3026AB71E6CC643007D7090 /* IVVHelperAssemblyImplementation.h */,
+				B3026AB81E6CC643007D7090 /* IVVHelperAssemblyImplementation.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B3026ABA1E6CE367007D7090 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				B3026ABB1E6CE37E007D7090 /* IVVCurrencyCovertionValidator.h */,
+				B3026ABC1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.h */,
+				B3026ABD1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.m */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		B3026ABF1E6DE996007D7090 /* StartUpManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2551E6AD4B60026469D /* IVVStartUpManager.h */,
+				B3D0B2561E6AD4B60026469D /* IVVStartUpManagerImplementation.h */,
+				B3D0B2571E6AD4B60026469D /* IVVStartUpManagerImplementation.m */,
+			);
+			path = StartUpManager;
+			sourceTree = "<group>";
+		};
+		B339FABC1E6AEC4100D62268 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B339FAC21E6AFC1400D62268 /* ExchangeView */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		B339FAC21E6AFC1400D62268 /* ExchangeView */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E041E70158E0019CEF6 /* ExchangeCurrencyView */,
+				B3E79E061E7018FB0019CEF6 /* ViewModeles */,
+				B339FABD1E6AEC6B00D62268 /* IVVExchangeView.h */,
+				B339FABE1E6AEC6B00D62268 /* IVVExchangeView.m */,
+				B339FAC01E6AEC8000D62268 /* IVVExchangeView.xib */,
+			);
+			path = ExchangeView;
+			sourceTree = "<group>";
+		};
+		B339FAC31E6AFC1F00D62268 /* ExchangeCurrencyFromView */ = {
+			isa = PBXGroup;
+			children = (
+				B339FAC41E6AFC4900D62268 /* IVVExchangeCurrencyFromView.h */,
+				B339FAC51E6AFC4900D62268 /* IVVExchangeCurrencyFromView.m */,
+				B339FAC71E6AFC5A00D62268 /* IVVExchangeCurrencyFromView.xib */,
+				B3B23C841E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.h */,
+				B3B23C851E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m */,
+			);
+			path = ExchangeCurrencyFromView;
+			sourceTree = "<group>";
+		};
+		B339FACA1E6B22AF00D62268 /* Core Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B339FACE1E6B22EE00D62268 /* Client */,
+				B3B23C781E6B5EFD009EBDE6 /* Mapper */,
+				B3B23C661E6B4B7C009EBDE6 /* Parser */,
+				B37C724D1E6F66B40008BFAD /* Scheduler */,
+				B3026AAB1E6CBCE7007D7090 /* Storage */,
+			);
+			path = "Core Layer";
+			sourceTree = "<group>";
+		};
+		B339FACE1E6B22EE00D62268 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B339FACF1E6B22FB00D62268 /* IVVClient.h */,
+				B339FACB1E6B22EA00D62268 /* IVVClientImplementation.h */,
+				B339FACC1E6B22EA00D62268 /* IVVClientImplementation.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		B339FAD01E6B256F00D62268 /* ExchangeRates */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C921E6C2E21009EBDE6 /* Configurator */,
+				B3B23C701E6B5C4E009EBDE6 /* Mapper */,
+				B339FAD41E6B2C3800D62268 /* IVVCurrencyRatesService.h */,
+				B339FAD11E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.h */,
+				B339FAD21E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.m */,
+			);
+			path = ExchangeRates;
+			sourceTree = "<group>";
+		};
+		B339FAD51E6B2E5600D62268 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B339FAD61E6B2E6800D62268 /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B339FAD61E6B2E6800D62268 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B339FAD71E6B2E8700D62268 /* IVVAPIConstants.h */,
+				B339FAD81E6B2E9A00D62268 /* IVVAPIConstants.m */,
+				B3B23C981E6C2FE7009EBDE6 /* IVVServiceConstants.h */,
+				B3B23C991E6C2FE7009EBDE6 /* IVVServiceConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B33B7A301E6ADCB4003D47E7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2511E6AD4B60026469D /* IVVServiceAssembly.h */,
+				B3D0B2521E6AD4B60026469D /* IVVServiceAssemblyImplementation.h */,
+				B3D0B2531E6AD4B60026469D /* IVVServiceAssemblyImplementation.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B33B7A311E6ADCC8003D47E7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B33B7A351E6ADD23003D47E7 /* IVVApplicationAssembly.h */,
+				B33B7A321E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.h */,
+				B33B7A331E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B37C724D1E6F66B40008BFAD /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				B37C724E1E6F66C10008BFAD /* IVVScheduler.h */,
+				B37C724F1E6F673A0008BFAD /* IVVSchedulerImplementation.h */,
+				B37C72501E6F673A0008BFAD /* IVVSchedulerImplementation.m */,
+			);
+			path = Scheduler;
+			sourceTree = "<group>";
+		};
+		B37C725F1E6F760D0008BFAD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B37C72601E6F76210008BFAD /* IVVCoreComponentsAssembly.h */,
+				B37C72611E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.h */,
+				B37C72621E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B3B23C661E6B4B7C009EBDE6 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C671E6B4BF5009EBDE6 /* IVVParser.h */,
+				B3B23C681E6B4C85009EBDE6 /* IVVXMLParserImplementation.h */,
+				B3B23C691E6B4C85009EBDE6 /* IVVXMLParserImplementation.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		B3B23C6B1E6B55A8009EBDE6 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C6C1E6B55B8009EBDE6 /* Currency */,
+				B3B23C8C1E6C2462009EBDE6 /* MoneyAmount */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		B3B23C6C1E6B55B8009EBDE6 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C6D1E6B55CE009EBDE6 /* IVVCurrencyObject.h */,
+				B3B23C6E1E6B55CE009EBDE6 /* IVVCurrencyObject.m */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		B3B23C701E6B5C4E009EBDE6 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C771E6B5C8A009EBDE6 /* IVVCurrencyRatesServiceMapper.h */,
+				B3B23C741E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.h */,
+				B3B23C751E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.m */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		B3B23C781E6B5EFD009EBDE6 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C791E6B5F0D009EBDE6 /* IVVMapper.h */,
+				B3B23C7A1E6B5F25009EBDE6 /* IVVMapperImplementation.h */,
+				B3B23C7B1E6B5F25009EBDE6 /* IVVMapperImplementation.m */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		B3B23C871E6C23C5009EBDE6 /* MoneyTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C8B1E6C240F009EBDE6 /* IVVMoneyTransferService.h */,
+				B3B23C881E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.h */,
+				B3B23C891E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m */,
+			);
+			path = MoneyTransfer;
+			sourceTree = "<group>";
+		};
+		B3B23C8C1E6C2462009EBDE6 /* MoneyAmount */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C8D1E6C2475009EBDE6 /* IVVMoneyAmountObject.h */,
+				B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmountObject.m */,
+			);
+			path = MoneyAmount;
+			sourceTree = "<group>";
+		};
+		B3B23C901E6C2480009EBDE6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C911E6C249E009EBDE6 /* IVVModelConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B3B23C921E6C2E21009EBDE6 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C961E6C2EFA009EBDE6 /* IVVCurrencyRatesServiceConfigurator.h */,
+				B3B23C931E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.h */,
+				B3B23C941E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		B3B23C9B1E6C3584009EBDE6 /* ViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CB41E6C5957009EBDE6 /* ExchangeViewModelFactory */,
+				B3B23C9F1E6C36CA009EBDE6 /* IVVCurrencyConvertionViewModelFactory.h */,
+				B3B23C9C1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.h */,
+				B3B23C9D1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m */,
+			);
+			path = ViewModelFactory;
+			sourceTree = "<group>";
+		};
+		B3B23CA51E6C4852009EBDE6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CA71E6C48F5009EBDE6 /* IVVDynamicView.h */,
+				B3B23CA61E6C48B1009EBDE6 /* IVVDynamicViewModel.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B3B23CA81E6C4C22009EBDE6 /* ExchangeToView */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CAC1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.h */,
+				B3B23CAD1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m */,
+				B3B23CAE1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib */,
+				B3B23CAA1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.h */,
+				B3B23CAB1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.m */,
+			);
+			path = ExchangeToView;
+			sourceTree = "<group>";
+		};
+		B3B23CB21E6C5141009EBDE6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CB31E6C5155009EBDE6 /* IVVExchangeCurrencyConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B3B23CB41E6C5957009EBDE6 /* ExchangeViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CB51E6C5982009EBDE6 /* IVVExchangeCurrencyViewModelFactory.h */,
+				B3B23CB61E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.h */,
+				B3B23CB71E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m */,
+			);
+			path = ExchangeViewModelFactory;
+			sourceTree = "<group>";
+		};
+		B3B23CB91E6C67F5009EBDE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CBA1E6C67FD009EBDE6 /* ExchangeModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3B23CBA1E6C67FD009EBDE6 /* ExchangeModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.h */,
+				B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m */,
+			);
+			path = ExchangeModel;
+			sourceTree = "<group>";
+		};
+		B3B923841E6F62E60041B51B /* CuurencyProvider */ = {
+			isa = PBXGroup;
+			children = (
+				B3B923851E6F63030041B51B /* IVVCurrencyRatesProvider.h */,
+				B3B923861E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.h */,
+				B3B923871E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m */,
+			);
+			path = CuurencyProvider;
+			sourceTree = "<group>";
+		};
+		B3D0B2161E6AD3EA0026469D = {
+			isa = PBXGroup;
+			children = (
+				B3D0B24A1E6AD4B60026469D /* AwesomeCurrencyConverter */,
+				B3D0B23E1E6AD3EB0026469D /* AwesomeCurrencyConverterTests */,
+				EB49F24D6298F0E06E1811DA /* Frameworks */,
+				0C35AC4F430AE3C3ACA78C38 /* Pods */,
+				B3D0B2201E6AD3EA0026469D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3D0B2201E6AD3EA0026469D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B21F1E6AD3EA0026469D /* AwesomeCurrencyConverter.app */,
+				B3D0B23B1E6AD3EA0026469D /* AwesomeCurrencyConverterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D0B23E1E6AD3EB0026469D /* AwesomeCurrencyConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B23F1E6AD3EB0026469D /* AwesomeCurrencyConverterTests.m */,
+				B3D0B2411E6AD3EB0026469D /* Info.plist */,
+			);
+			path = AwesomeCurrencyConverterTests;
+			sourceTree = "<group>";
+		};
+		B3D0B24A1E6AD4B60026469D /* AwesomeCurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B24B1E6AD4B60026469D /* Classes */,
+				B3D0B27F1E6AD4B60026469D /* Resources */,
+				B3D0B2811E6AD4B60026469D /* SupportingFiles */,
+			);
+			path = AwesomeCurrencyConverter;
+			sourceTree = "<group>";
+		};
+		B3D0B24B1E6AD4B60026469D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B24C1E6AD4B60026469D /* Application */,
+				B3D0B24F1E6AD4B60026469D /* Business Logic */,
+				B3D0B2581E6AD4B60026469D /* Model */,
+				B3D0B25B1E6AD4B60026469D /* Presentation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3D0B24C1E6AD4B60026469D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B24D1E6AD4B60026469D /* IVVAppDelegate.h */,
+				B3D0B24E1E6AD4B60026469D /* IVVAppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B3D0B24F1E6AD4B60026469D /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2501E6AD4B60026469D /* Assembly */,
+				B3E79E0F1E7051230019CEF6 /* Common */,
+				B339FAD51E6B2E5600D62268 /* Common */,
+				B339FACA1E6B22AF00D62268 /* Core Layer */,
+				B3026A9B1E6C9E7E007D7090 /* Helpers */,
+				B3D0B2541E6AD4B60026469D /* Services */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		B3D0B2501E6AD4B60026469D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B33B7A311E6ADCC8003D47E7 /* Application */,
+				B37C725F1E6F760D0008BFAD /* Core */,
+				B3026AB61E6CC634007D7090 /* Helper */,
+				B33B7A301E6ADCB4003D47E7 /* Service */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3D0B2541E6AD4B60026469D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B339FAD01E6B256F00D62268 /* ExchangeRates */,
+				B3B23C871E6C23C5009EBDE6 /* MoneyTransfer */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3D0B2581E6AD4B60026469D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23C901E6C2480009EBDE6 /* Constants */,
+				B3B23C6B1E6B55A8009EBDE6 /* Objects */,
+				B3D0B2591E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3D0B25B1E6AD4B60026469D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B25E1E6AD4B60026469D /* Common */,
+				B3D0B2661E6AD4B60026469D /* UserStory */,
+				B3D0B25C1E6AD4B60026469D /* LaunchScreen.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B3D0B25E1E6AD4B60026469D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B25F1E6AD4B60026469D /* Assembly */,
+				B3D0B2631E6AD4B60026469D /* Constants */,
+				B3B23CA51E6C4852009EBDE6 /* Protocol */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3D0B25F1E6AD4B60026469D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2601E6AD4B60026469D /* StoryboardAssembly */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3D0B2601E6AD4B60026469D /* StoryboardAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2611E6AD4B60026469D /* IVVStoryboardAssembly.h */,
+				B3D0B2621E6AD4B60026469D /* IVVStoryboardAssembly.m */,
+			);
+			path = StoryboardAssembly;
+			sourceTree = "<group>";
+		};
+		B3D0B2631E6AD4B60026469D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2641E6AD4B60026469D /* IVVPresentationConstants.h */,
+				B3D0B2651E6AD4B60026469D /* IVVPresentationConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B3D0B2661E6AD4B60026469D /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2671E6AD4B60026469D /* CurrencyConvertion */,
+				B3026AA01E6CB0E8007D7090 /* Welcome */,
+				B3D0B26B1E6AD4B60026469D /* Main.storyboard */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		B3D0B2671E6AD4B60026469D /* CurrencyConvertion */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2681E6AD4B60026469D /* Assembly */,
+				B3D0B26D1E6AD4B60026469D /* Interactor */,
+				B3D0B2721E6AD4B60026469D /* Presenter */,
+				B3D0B2761E6AD4B60026469D /* Router */,
+				B3D0B27A1E6AD4B60026469D /* View */,
+			);
+			path = CurrencyConvertion;
+			sourceTree = "<group>";
+		};
+		B3D0B2681E6AD4B60026469D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2691E6AD4B60026469D /* IVVCurrencyConvertionAssembly.h */,
+				B3D0B26A1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3D0B26D1E6AD4B60026469D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B26E1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.h */,
+				B3D0B26F1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.m */,
+				B3D0B2701E6AD4B60026469D /* IVVCurrencyConvertionInteractorInput.h */,
+				B3D0B2711E6AD4B60026469D /* IVVCurrencyConvertionInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B3D0B2721E6AD4B60026469D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CB91E6C67F5009EBDE6 /* Model */,
+				B3026ABA1E6CE367007D7090 /* Validator */,
+				B3B23C9B1E6C3584009EBDE6 /* ViewModelFactory */,
+				B3D0B2741E6AD4B60026469D /* IVVCurrencyConvertionPresenter.h */,
+				B3D0B2751E6AD4B60026469D /* IVVCurrencyConvertionPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3D0B2761E6AD4B60026469D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2771E6AD4B60026469D /* IVVCurrencyConvertionRouter.h */,
+				B3D0B2781E6AD4B60026469D /* IVVCurrencyConvertionRouter.m */,
+				B3D0B2791E6AD4B60026469D /* IVVCurrencyConvertionRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3D0B27A1E6AD4B60026469D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E0A1E701C830019CEF6 /* DataDisplayManager */,
+				B339FABC1E6AEC4100D62268 /* ViewComponents */,
+				B3D0B27B1E6AD4B60026469D /* IVVCurrencyConvertionViewController.h */,
+				B3D0B27C1E6AD4B60026469D /* IVVCurrencyConvertionViewController.m */,
+				B3D0B27D1E6AD4B60026469D /* IVVCurrencyConvertionViewInput.h */,
+				B3B23CA01E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.h */,
+				B3B23CA11E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.m */,
+				B3D0B27E1E6AD4B60026469D /* IVVCurrencyConvertionViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3D0B27F1E6AD4B60026469D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3D0B2801E6AD4B60026469D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3D0B2811E6AD4B60026469D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E221E706EE30019CEF6 /* EXTScope */,
+				B3E79E1B1E706EA90019CEF6 /* AwesomeCurrencyConverter-Prefix.pch */,
+				B3E79E1D1E706EA90019CEF6 /* Info.plist */,
+				B3E79E1E1E706EA90019CEF6 /* main.m */,
+			);
+			name = SupportingFiles;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B3E79E041E70158E0019CEF6 /* ExchangeCurrencyView */ = {
+			isa = PBXGroup;
+			children = (
+				B3B23CB21E6C5141009EBDE6 /* Constants */,
+				B339FAC31E6AFC1F00D62268 /* ExchangeCurrencyFromView */,
+				B3B23CA81E6C4C22009EBDE6 /* ExchangeToView */,
+			);
+			path = ExchangeCurrencyView;
+			sourceTree = "<group>";
+		};
+		B3E79E061E7018FB0019CEF6 /* ViewModeles */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E071E7019510019CEF6 /* IVVExchangeFromListViewModel.h */,
+				B3E79E081E7019510019CEF6 /* IVVExchangeFromListViewModel.m */,
+				B3E79E051E7016700019CEF6 /* IVVExchangeListViewModel.h */,
+				B3B23C811E6C1F60009EBDE6 /* IVVExchangeToListViewModel.h */,
+				B3B23C821E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m */,
+			);
+			path = ViewModeles;
+			sourceTree = "<group>";
+		};
+		B3E79E0A1E701C830019CEF6 /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E0B1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.h */,
+				B3E79E0C1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.m */,
+			);
+			path = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		B3E79E0F1E7051230019CEF6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E111E7051340019CEF6 /* Category */,
+				B3E79E101E7051280019CEF6 /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3E79E101E7051280019CEF6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E0E1E7050840019CEF6 /* IVVCurrencyConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B3E79E111E7051340019CEF6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E121E7051490019CEF6 /* NSArray+IVVCurrencyRates.h */,
+				B3E79E131E7051490019CEF6 /* NSArray+IVVCurrencyRates.m */,
+				B3E79E151E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.h */,
+				B3E79E161E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.m */,
+				B3E79E281E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.h */,
+				B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B3E79E221E706EE30019CEF6 /* EXTScope */ = {
+			isa = PBXGroup;
+			children = (
+				B3E79E231E706EED0019CEF6 /* EXTScope.h */,
+				B3E79E241E706EED0019CEF6 /* EXTScope.m */,
+				B3E79E251E706EED0019CEF6 /* metamacros.h */,
+			);
+			name = EXTScope;
+			path = EXTScope;
+			sourceTree = "<group>";
+		};
+		EB49F24D6298F0E06E1811DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F47832196EBC0D1FE5E5CFA1 /* libPods-AwesomeCurrencyConverter.a */,
+				CCC4F60C213DF189F364F2FE /* libPods-AwesomeCurrencyConverterTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3D0B21E1E6AD3EA0026469D /* AwesomeCurrencyConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3D0B2441E6AD3EB0026469D /* Build configuration list for PBXNativeTarget "AwesomeCurrencyConverter" */;
+			buildPhases = (
+				4DCA25B38405E51F004FF1D4 /* [CP] Check Pods Manifest.lock */,
+				B3D0B21B1E6AD3EA0026469D /* Sources */,
+				B3D0B21C1E6AD3EA0026469D /* Frameworks */,
+				B3D0B21D1E6AD3EA0026469D /* Resources */,
+				65C68078742E893B5826195E /* [CP] Embed Pods Frameworks */,
+				D4A2166D8D242FEE66DBD123 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeCurrencyConverter;
+			productName = AwesomeCurrencyConverter;
+			productReference = B3D0B21F1E6AD3EA0026469D /* AwesomeCurrencyConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3D0B23A1E6AD3EA0026469D /* AwesomeCurrencyConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3D0B2471E6AD3EB0026469D /* Build configuration list for PBXNativeTarget "AwesomeCurrencyConverterTests" */;
+			buildPhases = (
+				3B06CEB08ADB2C558469D00A /* [CP] Check Pods Manifest.lock */,
+				B3D0B2371E6AD3EA0026469D /* Sources */,
+				B3D0B2381E6AD3EA0026469D /* Frameworks */,
+				B3D0B2391E6AD3EA0026469D /* Resources */,
+				7E423D1F23C796C3A0C8C389 /* [CP] Embed Pods Frameworks */,
+				521E21386E98748EF5E4BAC5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3D0B23D1E6AD3EA0026469D /* PBXTargetDependency */,
+			);
+			name = AwesomeCurrencyConverterTests;
+			productName = AwesomeCurrencyConverterTests;
+			productReference = B3D0B23B1E6AD3EA0026469D /* AwesomeCurrencyConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3D0B2171E6AD3EA0026469D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ignatov inc.";
+				TargetAttributes = {
+					B3D0B21E1E6AD3EA0026469D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H45X843SXH;
+						ProvisioningStyle = Automatic;
+					};
+					B3D0B23A1E6AD3EA0026469D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H45X843SXH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B3D0B21E1E6AD3EA0026469D;
+					};
+				};
+			};
+			buildConfigurationList = B3D0B21A1E6AD3EA0026469D /* Build configuration list for PBXProject "AwesomeCurrencyConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3D0B2161E6AD3EA0026469D;
+			productRefGroup = B3D0B2201E6AD3EA0026469D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3D0B21E1E6AD3EA0026469D /* AwesomeCurrencyConverter */,
+				B3D0B23A1E6AD3EA0026469D /* AwesomeCurrencyConverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3D0B21D1E6AD3EA0026469D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D0B28C1E6AD4B60026469D /* Main.storyboard in Resources */,
+				B3B23CB11E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.xib in Resources */,
+				B3D0B2911E6AD4B60026469D /* Assets.xcassets in Resources */,
+				B339FAC11E6AEC8000D62268 /* IVVExchangeView.xib in Resources */,
+				B3D0B2881E6AD4B60026469D /* LaunchScreen.storyboard in Resources */,
+				B339FAC81E6AFC5A00D62268 /* IVVExchangeCurrencyFromView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D0B2391E6AD3EA0026469D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B06CEB08ADB2C558469D00A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCA25B38405E51F004FF1D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		521E21386E98748EF5E4BAC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65C68078742E893B5826195E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwesomeCurrencyConverter/Pods-AwesomeCurrencyConverter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E423D1F23C796C3A0C8C389 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A2166D8D242FEE66DBD123 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AwesomeCurrencyConverter/Pods-AwesomeCurrencyConverter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3D0B21B1E6AD3EA0026469D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E79E261E706EED0019CEF6 /* EXTScope.m in Sources */,
+				B3E79E0D1E701CEA0019CEF6 /* IVVCurrencyConvertionDataDisplayManager.m in Sources */,
+				B3026AAE1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m in Sources */,
+				B3D0B2841E6AD4B60026469D /* IVVAppDelegate.m in Sources */,
+				B3E79E171E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.m in Sources */,
+				B3D0B2871E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodeld in Sources */,
+				B3E79E211E706EA90019CEF6 /* main.m in Sources */,
+				B3D0B28D1E6AD4B60026469D /* IVVCurrencyConvertionInteractor.m in Sources */,
+				B339FAD31E6B25B500D62268 /* IVVCurrencyRatesServiceImplementation.m in Sources */,
+				B339FABF1E6AEC6B00D62268 /* IVVExchangeView.m in Sources */,
+				B3026A9F1E6C9EC3007D7090 /* IVVCurrencyConverterImplementation.m in Sources */,
+				B3B23CAF1E6C4CA7009EBDE6 /* IVVExchangeCurrencyToViewModel.m in Sources */,
+				B3B23C8A1E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m in Sources */,
+				B3B23C6F1E6B55CE009EBDE6 /* IVVCurrencyObject.m in Sources */,
+				B3B23CBD1E6C6812009EBDE6 /* IVVCurrencyConvertionExchangeModel.m in Sources */,
+				B37C72511E6F673A0008BFAD /* IVVSchedulerImplementation.m in Sources */,
+				B3D0B2861E6AD4B60026469D /* IVVStartUpManagerImplementation.m in Sources */,
+				B3B23C6A1E6B4C85009EBDE6 /* IVVXMLParserImplementation.m in Sources */,
+				B3B923881E6F630F0041B51B /* IVVCurrencyRatesProviderImplementation.m in Sources */,
+				B339FAC61E6AFC4900D62268 /* IVVExchangeCurrencyFromView.m in Sources */,
+				B3B23C831E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m in Sources */,
+				B3026ABE1E6CE825007D7090 /* IVVCurrencyCovertionValidatorImplementation.m in Sources */,
+				B3B23C9E1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m in Sources */,
+				B3E79E2A1E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m in Sources */,
+				B3B23C761E6B5C7B009EBDE6 /* IVVCurrencyRatesServiceMapperImplementation.m in Sources */,
+				B3D0B28A1E6AD4B60026469D /* IVVPresentationConstants.m in Sources */,
+				B3026AA31E6CB0FC007D7090 /* IVVWelocmeViewController.m in Sources */,
+				B37C72631E6F768C0008BFAD /* IVVCoreComponentsAssemblyImplementation.m in Sources */,
+				B3026AB91E6CC643007D7090 /* IVVHelperAssemblyImplementation.m in Sources */,
+				B3026AB51E6CBE42007D7090 /* IVVPresistentStoreImplementation.m in Sources */,
+				B3E79E091E7019510019CEF6 /* IVVExchangeFromListViewModel.m in Sources */,
+				B3B23C861E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m in Sources */,
+				B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmountObject.m in Sources */,
+				B3D0B28B1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m in Sources */,
+				B3D0B2901E6AD4B60026469D /* IVVCurrencyConvertionViewController.m in Sources */,
+				B3D0B28F1E6AD4B60026469D /* IVVCurrencyConvertionRouter.m in Sources */,
+				B33B7A341E6ADCE2003D47E7 /* IVVApplicationAssemblyImplementation.m in Sources */,
+				B3B23C951E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m in Sources */,
+				B3D0B28E1E6AD4B60026469D /* IVVCurrencyConvertionPresenter.m in Sources */,
+				B3B23CB81E6C59D4009EBDE6 /* IVVExchangeCurrencyViewModelFactoryImplementation.m in Sources */,
+				B3D0B2851E6AD4B60026469D /* IVVServiceAssemblyImplementation.m in Sources */,
+				B3B23C9A1E6C2FE7009EBDE6 /* IVVServiceConstants.m in Sources */,
+				B339FAD91E6B2E9A00D62268 /* IVVAPIConstants.m in Sources */,
+				B3E79E141E7051490019CEF6 /* NSArray+IVVCurrencyRates.m in Sources */,
+				B3B23C7C1E6B5F25009EBDE6 /* IVVMapperImplementation.m in Sources */,
+				B339FACD1E6B22EA00D62268 /* IVVClientImplementation.m in Sources */,
+				B3B23CA21E6C37E4009EBDE6 /* IVVCurrencyConvertionViewModel.m in Sources */,
+				B3D0B2891E6AD4B60026469D /* IVVStoryboardAssembly.m in Sources */,
+				B3B23CB01E6C4CA7009EBDE6 /* IVVExchangeCurrencyToView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D0B2371E6AD3EA0026469D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3D0B23D1E6AD3EA0026469D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3D0B21E1E6AD3EA0026469D /* AwesomeCurrencyConverter */;
+			targetProxy = B3D0B23C1E6AD3EA0026469D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3D0B25C1E6AD4B60026469D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3D0B25D1E6AD4B60026469D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		B3D0B26B1E6AD4B60026469D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3D0B26C1E6AD4B60026469D /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3D0B2421E6AD3EB0026469D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3D0B2431E6AD3EB0026469D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3D0B2451E6AD3EB0026469D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33FB32296F2ACC4D85609B08 /* Pods-AwesomeCurrencyConverter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H45X843SXH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/AwesomeCurrencyConverter-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"EasyMapping\"",
+					"-l\"FXBlurView\"",
+					"-l\"KCOrderedAccessorFix\"",
+					"-l\"MagicalRecord\"",
+					"-l\"SDWebImage\"",
+					"-l\"Typhoon\"",
+					"-l\"VVJSONSchemaValidation\"",
+					"-l\"ViperMcFlurry\"",
+					"-l\"iCarousel\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignatov-inc.AwesomeCurrencyConverter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B3D0B2461E6AD3EB0026469D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7D8D1FC8E08AE2494E4876 /* Pods-AwesomeCurrencyConverter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H45X843SXH;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/AwesomeCurrencyConverter-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"EasyMapping\"",
+					"-l\"FXBlurView\"",
+					"-l\"KCOrderedAccessorFix\"",
+					"-l\"MagicalRecord\"",
+					"-l\"SDWebImage\"",
+					"-l\"Typhoon\"",
+					"-l\"VVJSONSchemaValidation\"",
+					"-l\"ViperMcFlurry\"",
+					"-l\"iCarousel\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignatov-inc.AwesomeCurrencyConverter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B3D0B2481E6AD3EB0026469D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC9B29664A7DD2411EDBECC /* Pods-AwesomeCurrencyConverterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H45X843SXH;
+				INFOPLIST_FILE = AwesomeCurrencyConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignatov-inc.AwesomeCurrencyConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeCurrencyConverter.app/AwesomeCurrencyConverter";
+			};
+			name = Debug;
+		};
+		B3D0B2491E6AD3EB0026469D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D43E3A0A01380C3FBC6363 /* Pods-AwesomeCurrencyConverterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H45X843SXH;
+				INFOPLIST_FILE = AwesomeCurrencyConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignatov-inc.AwesomeCurrencyConverterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeCurrencyConverter.app/AwesomeCurrencyConverter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3D0B21A1E6AD3EA0026469D /* Build configuration list for PBXProject "AwesomeCurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D0B2421E6AD3EB0026469D /* Debug */,
+				B3D0B2431E6AD3EB0026469D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3D0B2441E6AD3EB0026469D /* Build configuration list for PBXNativeTarget "AwesomeCurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D0B2451E6AD3EB0026469D /* Debug */,
+				B3D0B2461E6AD3EB0026469D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3D0B2471E6AD3EB0026469D /* Build configuration list for PBXNativeTarget "AwesomeCurrencyConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3D0B2481E6AD3EB0026469D /* Debug */,
+				B3D0B2491E6AD3EB0026469D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B3D0B2591E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B3D0B25A1E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodel */,
+			);
+			currentVersion = B3D0B25A1E6AD4B60026469D /* AwesomeCurrencyConverter.xcdatamodel */;
+			path = AwesomeCurrencyConverter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B3D0B2171E6AD3EA0026469D /* Project object */;
+}

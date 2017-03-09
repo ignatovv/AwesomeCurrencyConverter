@@ -1,0 +1,104 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - EasyMapping (0.15.1):
+    - EasyMapping/Core (= 0.15.1)
+  - EasyMapping/Core (0.15.1)
+  - FXBlurView (1.6.4)
+  - iCarousel (1.8.3)
+  - KCOrderedAccessorFix (0.0.1)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - OCMock (3.3)
+  - OHHTTPStubs (3.1.12):
+    - OHHTTPStubs/Core (= 3.1.12)
+  - OHHTTPStubs/Core (3.1.12)
+  - RamblerTyphoonUtils/AssemblyCollector (1.2.0)
+  - RamblerTyphoonUtils/AssemblyTesting (1.2.0)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - Typhoon (3.4.3):
+    - Typhoon/no-arc (= 3.4.3)
+  - Typhoon/no-arc (3.4.3)
+  - ViperMcFlurry (1.1.4):
+    - ViperMcFlurry/Core (= 1.1.4)
+    - ViperMcFlurry/IntermoduleDataTransfer (= 1.1.4)
+  - ViperMcFlurry/Core (1.1.4)
+  - ViperMcFlurry/IntermoduleDataTransfer (1.1.4):
+    - ViperMcFlurry/Core
+  - VVJSONSchemaValidation (1.5.0)
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - AFNetworking (= 2.6.3)
+  - EasyMapping (= 0.15.1)
+  - FXBlurView (= 1.6.4)
+  - iCarousel (~> 1.8.2)
+  - KCOrderedAccessorFix (= 0.0.1)
+  - MagicalRecord (= 2.3.2)
+  - OCMock (= 3.3)
+  - OHHTTPStubs (= 3.1.12)
+  - RamblerTyphoonUtils/AssemblyCollector (from `https://github.com/rambler-digital-solutions/RamblerTyphoonUtils.git`, tag `1.2.0`)
+  - RamblerTyphoonUtils/AssemblyTesting (from `https://github.com/rambler-digital-solutions/RamblerTyphoonUtils.git`, tag `1.2.0`)
+  - SDWebImage (= 3.7.3)
+  - Typhoon (= 3.4.3)
+  - ViperMcFlurry (from `https://github.com/rambler-digital-solutions/ViperMcFlurry.git`, tag `1.1.4`)
+  - VVJSONSchemaValidation (~> 1.5.0)
+  - XMLDictionary (= 1.4.1)
+
+EXTERNAL SOURCES:
+  RamblerTyphoonUtils:
+    :git: https://github.com/rambler-digital-solutions/RamblerTyphoonUtils.git
+    :tag: 1.2.0
+  ViperMcFlurry:
+    :git: https://github.com/rambler-digital-solutions/ViperMcFlurry.git
+    :tag: 1.1.4
+
+CHECKOUT OPTIONS:
+  RamblerTyphoonUtils:
+    :git: https://github.com/rambler-digital-solutions/RamblerTyphoonUtils.git
+    :tag: 1.2.0
+  ViperMcFlurry:
+    :git: https://github.com/rambler-digital-solutions/ViperMcFlurry.git
+    :tag: 1.1.4
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  EasyMapping: b5e965fd09ace6f175f0116968bc98f810552032
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  KCOrderedAccessorFix: 06f32d8f780a7169f542ee36d2ee26339ec95283
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
+  OHHTTPStubs: 8cf0cfe6f34f13fc88fdf5b2a1b2c2536e8c0261
+  RamblerTyphoonUtils: 814c02d7a0136a164efaae1133f47db1e4579cd0
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  Typhoon: 382b918b31d5d19a82922448af65f01f08102dc6
+  ViperMcFlurry: c6a352e81487cadecdf710f24772fc1dd03eacd5
+  VVJSONSchemaValidation: 40411ea98f65d065a7c2ce7483876106bf710e9b
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+
+PODFILE CHECKSUM: ed51cf91bcf10cf76bc670a8638b9bff20586882
+
+COCOAPODS: 1.1.1
