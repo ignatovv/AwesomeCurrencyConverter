@@ -9,7 +9,7 @@
 #import "IVVMoneyTransferServiceImplementation.h"
 
 // Model
-#import "IVVMoneyAmountObject.h"
+#import "IVVMoneyAmount.h"
 
 // Storage
 #import "IVVMoneyStorage.h"
@@ -38,11 +38,11 @@ static NSString * const IVVInitialMoneyAmount = @"100.00";
     });
     
     NSMutableArray *moneyAmounts = [NSMutableArray array];
-    IVVMoneyAmountObject *EURAmount = [self moneyAmountForCurrency:IVVCurrencyTypeEUR];
+    IVVMoneyAmount *EURAmount = [self moneyAmountForCurrency:IVVCurrencyTypeEUR];
     [moneyAmounts addObject:EURAmount];
-    IVVMoneyAmountObject *GBPAmount = [self moneyAmountForCurrency:IVVCurrencyTypeGBP];
+    IVVMoneyAmount *GBPAmount = [self moneyAmountForCurrency:IVVCurrencyTypeGBP];
     [moneyAmounts addObject:GBPAmount];
-    IVVMoneyAmountObject *USDAmount = [self moneyAmountForCurrency:IVVCurrencyTypeUSD];
+    IVVMoneyAmount *USDAmount = [self moneyAmountForCurrency:IVVCurrencyTypeUSD];
     [moneyAmounts addObject:USDAmount];
     
     return [moneyAmounts copy];
@@ -76,9 +76,9 @@ static NSString * const IVVInitialMoneyAmount = @"100.00";
 
 #pragma mark - Private methods
 
-- (IVVMoneyAmountObject *)moneyAmountForCurrency:(IVVCurrencyType)currency {
+- (IVVMoneyAmount *)moneyAmountForCurrency:(IVVCurrencyType)currency {
     NSDecimalNumber *amount = [self.moneyStorage getMoneyAmountForCurrency:currency];
-    IVVMoneyAmountObject *amountObject =[[IVVMoneyAmountObject alloc] initWithCurrencyType:currency
+    IVVMoneyAmount *amountObject =[[IVVMoneyAmount alloc] initWithCurrencyType:currency
                                                                                moneyAmount:amount];
     return amountObject;
 }

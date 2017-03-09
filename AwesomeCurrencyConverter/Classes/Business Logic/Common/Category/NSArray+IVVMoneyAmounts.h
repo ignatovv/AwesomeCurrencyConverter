@@ -10,10 +10,10 @@
 
 #import "IVVCurrencyConstants.h"
 
-@class IVVMoneyAmountObject;
+@class IVVMoneyAmount;
 
-@interface NSArray<IVVMoneyAmountObject>(IVVMoneyAmounts)
+@interface NSArray<IVVMoneyAmount>(IVVMoneyAmounts)
 
-- (IVVMoneyAmountObject)moneyAmountWithCurrency:(IVVCurrencyType)type;
+- (IVVMoneyAmount)moneyAmountWithCurrency:(IVVCurrencyType)type;
 
 @end

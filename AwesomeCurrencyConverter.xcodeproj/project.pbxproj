@@ -30,7 +30,7 @@
 		B3B23C831E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C821E6C1F60009EBDE6 /* IVVExchangeToListViewModel.m */; };
 		B3B23C861E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C851E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m */; };
 		B3B23C8A1E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C891E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m */; };
-		B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmountObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmountObject.m */; };
+		B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmount.m */; };
 		B3B23C951E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C941E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m */; };
 		B3B23C9A1E6C2FE7009EBDE6 /* IVVServiceConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C991E6C2FE7009EBDE6 /* IVVServiceConstants.m */; };
 		B3B23C9E1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B23C9D1E6C35AB009EBDE6 /* IVVCurrencyConvertionViewModelFactoryImplementation.m */; };
@@ -138,8 +138,8 @@
 		B3B23C881E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyTransferServiceImplementation.h; sourceTree = "<group>"; };
 		B3B23C891E6C2402009EBDE6 /* IVVMoneyTransferServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyTransferServiceImplementation.m; sourceTree = "<group>"; };
 		B3B23C8B1E6C240F009EBDE6 /* IVVMoneyTransferService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVMoneyTransferService.h; sourceTree = "<group>"; };
-		B3B23C8D1E6C2475009EBDE6 /* IVVMoneyAmountObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyAmountObject.h; sourceTree = "<group>"; };
-		B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmountObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyAmountObject.m; sourceTree = "<group>"; };
+		B3B23C8D1E6C2475009EBDE6 /* IVVMoneyAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyAmount.h; sourceTree = "<group>"; };
+		B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyAmount.m; sourceTree = "<group>"; };
 		B3B23C911E6C249E009EBDE6 /* IVVModelConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVModelConstants.h; sourceTree = "<group>"; };
 		B3B23C931E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyRatesServiceConfiguratorImplementation.h; sourceTree = "<group>"; };
 		B3B23C941E6C2E34009EBDE6 /* IVVCurrencyRatesServiceConfiguratorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVCurrencyRatesServiceConfiguratorImplementation.m; sourceTree = "<group>"; };
@@ -540,8 +540,8 @@
 		B3B23C8C1E6C2462009EBDE6 /* MoneyAmount */ = {
 			isa = PBXGroup;
 			children = (
-				B3B23C8D1E6C2475009EBDE6 /* IVVMoneyAmountObject.h */,
-				B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmountObject.m */,
+				B3B23C8D1E6C2475009EBDE6 /* IVVMoneyAmount.h */,
+				B3B23C8E1E6C2475009EBDE6 /* IVVMoneyAmount.m */,
 			);
 			path = MoneyAmount;
 			sourceTree = "<group>";
@@ -1207,7 +1207,7 @@
 				B3026AB51E6CBE42007D7090 /* IVVPresistentStoreImplementation.m in Sources */,
 				B3E79E091E7019510019CEF6 /* IVVExchangeFromListViewModel.m in Sources */,
 				B3B23C861E6C2017009EBDE6 /* IVVExchangeCurrencyFromViewModel.m in Sources */,
-				B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmountObject.m in Sources */,
+				B3B23C8F1E6C2475009EBDE6 /* IVVMoneyAmount.m in Sources */,
 				B3D0B28B1E6AD4B60026469D /* IVVCurrencyConvertionAssembly.m in Sources */,
 				B3D0B2901E6AD4B60026469D /* IVVCurrencyConvertionViewController.m in Sources */,
 				B3D0B28F1E6AD4B60026469D /* IVVCurrencyConvertionRouter.m in Sources */,

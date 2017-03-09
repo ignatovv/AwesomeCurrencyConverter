@@ -8,13 +8,13 @@
 
 #import "NSArray+IVVMoneyAmounts.h"
 
-#import "IVVMoneyAmountObject.h"
+#import "IVVMoneyAmount.h"
 
 @implementation NSArray(IVVMoneyAmounts)
 
-- (IVVMoneyAmountObject *)moneyAmountWithCurrency:(IVVCurrencyType)type {
+- (IVVMoneyAmount *)moneyAmountWithCurrency:(IVVCurrencyType)type {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K = %u", NSStringFromSelector(@selector(currencyType)), type];
-    IVVMoneyAmountObject *moneyAmount = [[self filteredArrayUsingPredicate:predicate] firstObject];
+    IVVMoneyAmount *moneyAmount = [[self filteredArrayUsingPredicate:predicate] firstObject];
     return moneyAmount;
 }
 

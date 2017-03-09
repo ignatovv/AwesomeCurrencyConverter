@@ -14,7 +14,7 @@
 #import "IVVExchangeFromListViewModel.h"
 
 // Model
-#import "IVVMoneyAmountObject.h"
+#import "IVVMoneyAmount.h"
 #import "IVVCurrency.h"
 #import "IVVCurrencyConvertionExchangeModel.h"
 
@@ -43,7 +43,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
 
     NSMutableArray<IVVExchangeCurrencyToViewModel *> *currencyViewModeles = [NSMutableArray array];
     
-    for (IVVMoneyAmountObject *moneyAmount in moneyAmounts) {
+    for (IVVMoneyAmount *moneyAmount in moneyAmounts) {
         IVVCurrency *currencyRate = [currencyRates currecnyRateWithCurrency:moneyAmount.currencyType];
     
         IVVExchangeCurrencyToViewModel *viewModel = [self currencyToViewModelWithMoneyAmount:moneyAmount
@@ -60,7 +60,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
                                                               currencyRates:(IVVCurrencyRates)currencyRates {
     NSMutableArray<IVVExchangeCurrencyFromViewModel *> *currencyViewModeles = [NSMutableArray array];
     
-    for (IVVMoneyAmountObject *moneyAmount in moneyAmounts) {
+    for (IVVMoneyAmount *moneyAmount in moneyAmounts) {
         IVVCurrency *currencyRate = [currencyRates currecnyRateWithCurrency:moneyAmount.currencyType];
         
         IVVExchangeCurrencyFromViewModel *viewModel = [self currencyFromViewModelWithMoneyAmount:moneyAmount
@@ -81,7 +81,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
         currencyViewModel.exchangeAmount = [self moneyAmountStringWithAmount:exchangeModel.exchangeAmount];
         
         IVVCurrencyType currencyType = currencyViewModel.currencyType;
-        IVVMoneyAmountObject *moneyAmount = [exchangeModel.moneyAmounts moneyAmountWithCurrency:currencyType];
+        IVVMoneyAmount *moneyAmount = [exchangeModel.moneyAmounts moneyAmountWithCurrency:currencyType];
         NSString *moneyAmountString = [self moneyAmountWithType:currencyType
                                                          amount:moneyAmount.moneyAmount];
         currencyViewModel.currencyAmount = moneyAmountString;
@@ -114,7 +114,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
         currencyViewModel.exchangeRate = exchangeRate;
         
         IVVCurrencyType currencyType = currencyViewModel.currencyType;
-        IVVMoneyAmountObject *moneyAmount = [exchangeModel.moneyAmounts moneyAmountWithCurrency:currencyType];
+        IVVMoneyAmount *moneyAmount = [exchangeModel.moneyAmounts moneyAmountWithCurrency:currencyType];
         
         NSString *moneyAmountString = [self moneyAmountWithType:currencyType
                                                          amount:moneyAmount.moneyAmount];
@@ -131,7 +131,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
 
 #pragma mark - Private Methods
 
-- (IVVExchangeCurrencyToViewModel *)currencyToViewModelWithMoneyAmount:(IVVMoneyAmountObject *)moneyAmount
+- (IVVExchangeCurrencyToViewModel *)currencyToViewModelWithMoneyAmount:(IVVMoneyAmount *)moneyAmount
                                                           currencyRate:(IVVCurrency *)currencyRate {
     IVVExchangeCurrencyToViewModel *viewModel = [[IVVExchangeCurrencyToViewModel alloc] init];
     viewModel.name = [self currencyNameWithType:moneyAmount.currencyType];
@@ -144,7 +144,7 @@ static NSString * const IVVMoneyAmountZero = @"0";
     return viewModel;
 }
 
-- (IVVExchangeCurrencyFromViewModel *)currencyFromViewModelWithMoneyAmount:(IVVMoneyAmountObject *)moneyAmount
+- (IVVExchangeCurrencyFromViewModel *)currencyFromViewModelWithMoneyAmount:(IVVMoneyAmount *)moneyAmount
                                                               currencyRate:(IVVCurrency *)currencyRate {
     IVVExchangeCurrencyFromViewModel *viewModel = [[IVVExchangeCurrencyFromViewModel alloc] init];
     viewModel.name = [self currencyNameWithType:moneyAmount.currencyType];

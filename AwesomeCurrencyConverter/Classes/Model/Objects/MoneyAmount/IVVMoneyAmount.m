@@ -1,14 +1,14 @@
 //
-//  IVVMoneyAmountObject.m
+//  IVVMoneyAmount.m
 //  AwesomeCurrencyConverter
 //
 //  Created by Vladimir Ignatov on 05/03/2017.
 //  Copyright © 2017 Ignatov inc. All rights reserved.
 //
 
-#import "IVVMoneyAmountObject.h"
+#import "IVVMoneyAmount.h"
 
-@implementation IVVMoneyAmountObject
+@implementation IVVMoneyAmount
 
 - (instancetype)initWithCurrencyType:(IVVCurrencyType)currencyType
                          moneyAmount:(NSDecimalNumber *)moneyAmount {

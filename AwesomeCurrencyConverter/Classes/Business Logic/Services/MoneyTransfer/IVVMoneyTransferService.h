@@ -9,7 +9,7 @@
 #import "IVVCurrencyConstants.h"
 #import "IVVModelConstants.h"
 
-@class IVVMoneyAmountObject;
+@class IVVMoneyAmount;
 
 @protocol IVVMoneyTransferService <NSObject>
 

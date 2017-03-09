@@ -11,14 +11,14 @@
 #import "NSArray+IVVMoneyAmounts.h"
 
 #import "IVVCurrencyConvertionExchangeModel.h"
-#import "IVVMoneyAmountObject.h"
+#import "IVVMoneyAmount.h"
 
 static const NSInteger IVVCurrencyConvertionMinimunConvertionAmount = 0;
 
 @implementation IVVCurrencyCovertionValidatorImplementation
 
 - (BOOL)validateTransactionWithTransactionModel:(IVVCurrencyConvertionExchangeModel *)transactionModel {
-    IVVMoneyAmountObject *moneyAmountObject = [transactionModel.moneyAmounts moneyAmountWithCurrency:transactionModel.currencyFromType];
+    IVVMoneyAmount *moneyAmountObject = [transactionModel.moneyAmounts moneyAmountWithCurrency:transactionModel.currencyFromType];
     NSComparisonResult comparisonResult = [moneyAmountObject.moneyAmount compare:transactionModel.exchangeAmount];
     
     return comparisonResult != NSOrderedAscending;

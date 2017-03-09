@@ -16,7 +16,7 @@
 
 // Model
 #import "IVVCurrencyConvertionExchangeModel.h"
-#import "IVVMoneyAmountObject.h"
+#import "IVVMoneyAmount.h"
 
 // View Model
 #import "IVVCurrencyConvertionViewModel.h"

@@ -93,5 +93,4 @@ static const NSUInteger IVVHashPrimeNumber = 31u;
     return hash;
 }
 
-
 @end
