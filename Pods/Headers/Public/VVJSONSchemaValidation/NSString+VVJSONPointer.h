@@ -1,1 +1,0 @@
-../../../VVJSONSchemaValidation/VVJSONSchemaValidation/NSString+VVJSONPointer.h

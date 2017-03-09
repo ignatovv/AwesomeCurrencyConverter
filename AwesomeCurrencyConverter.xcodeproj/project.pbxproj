@@ -211,12 +211,12 @@
 		B3E79E131E7051490019CEF6 /* NSArray+IVVCurrencyRates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IVVCurrencyRates.m"; sourceTree = "<group>"; };
 		B3E79E151E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+IVVMoneyAmounts.h"; sourceTree = "<group>"; };
 		B3E79E161E7053C00019CEF6 /* NSArray+IVVMoneyAmounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+IVVMoneyAmounts.m"; sourceTree = "<group>"; };
-		B3E79E1B1E706EA90019CEF6 /* AwesomeCurrencyConverter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AwesomeCurrencyConverter-Prefix.pch"; path = "AwesomeCurrencyConverter-Prefix.pch"; sourceTree = "<group>"; };
-		B3E79E1D1E706EA90019CEF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Info.plist; sourceTree = "<group>"; };
-		B3E79E1E1E706EA90019CEF6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = main.m; sourceTree = "<group>"; };
-		B3E79E231E706EED0019CEF6 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EXTScope.h; path = EXTScope.h; sourceTree = "<group>"; };
-		B3E79E241E706EED0019CEF6 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EXTScope.m; path = EXTScope.m; sourceTree = "<group>"; };
-		B3E79E251E706EED0019CEF6 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = metamacros.h; sourceTree = "<group>"; };
+		B3E79E1B1E706EA90019CEF6 /* AwesomeCurrencyConverter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AwesomeCurrencyConverter-Prefix.pch"; sourceTree = "<group>"; };
+		B3E79E1D1E706EA90019CEF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E79E1E1E706EA90019CEF6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3E79E231E706EED0019CEF6 /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		B3E79E241E706EED0019CEF6 /* EXTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTScope.m; sourceTree = "<group>"; };
+		B3E79E251E706EED0019CEF6 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		B3E79E281E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDecimalNumber+IVVUtilities.h"; sourceTree = "<group>"; };
 		B3E79E291E7083E10019CEF6 /* NSDecimalNumber+IVVUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDecimalNumber+IVVUtilities.m"; sourceTree = "<group>"; };
 		C5D43E3A0A01380C3FBC6363 /* Pods-AwesomeCurrencyConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeCurrencyConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeCurrencyConverterTests/Pods-AwesomeCurrencyConverterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -882,7 +882,6 @@
 				B3E79E1D1E706EA90019CEF6 /* Info.plist */,
 				B3E79E1E1E706EA90019CEF6 /* main.m */,
 			);
-			name = SupportingFiles;
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
@@ -954,7 +953,6 @@
 				B3E79E241E706EED0019CEF6 /* EXTScope.m */,
 				B3E79E251E706EED0019CEF6 /* metamacros.h */,
 			);
-			name = EXTScope;
 			path = EXTScope;
 			sourceTree = "<group>";
 		};
@@ -1366,13 +1364,7 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
-					"-l\"EasyMapping\"",
-					"-l\"FXBlurView\"",
-					"-l\"KCOrderedAccessorFix\"",
-					"-l\"MagicalRecord\"",
-					"-l\"SDWebImage\"",
 					"-l\"Typhoon\"",
-					"-l\"VVJSONSchemaValidation\"",
 					"-l\"ViperMcFlurry\"",
 					"-l\"iCarousel\"",
 					"-framework",
@@ -1411,13 +1403,7 @@
 					"$(inherited)",
 					"-ObjC",
 					"-l\"AFNetworking\"",
-					"-l\"EasyMapping\"",
-					"-l\"FXBlurView\"",
-					"-l\"KCOrderedAccessorFix\"",
-					"-l\"MagicalRecord\"",
-					"-l\"SDWebImage\"",
 					"-l\"Typhoon\"",
-					"-l\"VVJSONSchemaValidation\"",
 					"-l\"ViperMcFlurry\"",
 					"-l\"iCarousel\"",
 					"-framework",

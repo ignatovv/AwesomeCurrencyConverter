@@ -1,1 +1,0 @@
-../../../VVJSONSchemaValidation/VVJSONSchemaValidation/NSObject+VVJSONComparison.h
