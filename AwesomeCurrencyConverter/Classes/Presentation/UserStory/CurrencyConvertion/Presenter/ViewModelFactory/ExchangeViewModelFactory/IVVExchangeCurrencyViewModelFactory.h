@@ -21,9 +21,9 @@
                                                               currencyRates:(IVVCurrencyRates)currencyRates;
 
 - (IVVExchangeFromListViewModel *)enrichExchangeFromListViewModel:(IVVExchangeFromListViewModel *)viewModel
-                                                withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel;
+                                                withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel;
 
 - (IVVExchangeToListViewModel *)enrichExchangeToListViewModel:(IVVExchangeToListViewModel *)viewModel
-                                            withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel;
+                                            withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel;
 
 @end

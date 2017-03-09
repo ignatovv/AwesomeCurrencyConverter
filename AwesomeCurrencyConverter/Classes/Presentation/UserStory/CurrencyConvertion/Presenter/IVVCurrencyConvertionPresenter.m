@@ -35,7 +35,7 @@
 @interface IVVCurrencyConvertionPresenter()
 
 @property (nonatomic, strong) IVVCurrencyConvertionViewModel *viewModel;
-@property (nonatomic, strong) IVVCurrencyTransacrionModel *exchangeModel;
+@property (nonatomic, strong) IVVCurrencyTransacrionModel *transactionModel;
 
 @end
 
@@ -43,12 +43,12 @@
 
 #pragma mark - Getters / Setters
 
-- (IVVCurrencyTransacrionModel *)exchangeModel {
-    if (_exchangeModel == nil) {
-        _exchangeModel = [[IVVCurrencyTransacrionModel alloc] init];
+- (IVVCurrencyTransacrionModel *)transactionModel {
+    if (_transactionModel == nil) {
+        _transactionModel = [[IVVCurrencyTransacrionModel alloc] init];
     }
     
-    return _exchangeModel;
+    return _transactionModel;
 }
 
 #pragma mark - IVVCurrencyConvertionViewOutput
@@ -67,33 +67,33 @@
 
 - (void)exchangeTextDidChange:(NSString *)exchangeText {
     NSDecimalNumber *exchangeAmount = [NSDecimalNumber ivv_decimalNumberWithString:exchangeText];
-    self.exchangeModel.exchangeAmount = exchangeAmount;
+    self.transactionModel.exchangeAmount = exchangeAmount;
     [self updateView];
 }
 
 - (void)exchangeCurrencyDidChange:(IVVCurrencyType)currencyType
                         convertTo:(BOOL)convertTo {
     if (convertTo == YES) {
-        self.exchangeModel.currencyToType = currencyType;
+        self.transactionModel.currencyToType = currencyType;
     } else {
-        self.exchangeModel.currencyFromType = currencyType;
+        self.transactionModel.currencyFromType = currencyType;
     }
     
     [self updateView];
 }
 
 - (void)exchangeInitiated {
-    [self.interactor exchangeMoney:self.exchangeModel.exchangeAmount
-                      fromCurrency:self.exchangeModel.currencyFromType
-                        toCurrency:self.exchangeModel.currencyToType
-                     currencyRates:self.exchangeModel.currencyRates];
+    [self.interactor exchangeMoney:self.transactionModel.exchangeAmount
+                      fromCurrency:self.transactionModel.currencyFromType
+                        toCurrency:self.transactionModel.currencyToType
+                     currencyRates:self.transactionModel.currencyRates];
 }
 
 #pragma mark - IVVCurrencyConvertionInteractorOutput
 
 - (void)onMoneyAmountsDidChange:(IVVMoneyAmounts)moneyAmounts {
-    self.exchangeModel.moneyAmounts = moneyAmounts;
-    self.exchangeModel.exchangeAmount = [NSDecimalNumber zero];
+    self.transactionModel.moneyAmounts = moneyAmounts;
+    self.transactionModel.exchangeAmount = [NSDecimalNumber zero];
     
     [self.view purgeText];
     if ([self generateViewModelIfNeeded]) {
@@ -102,7 +102,7 @@
 }
 
 - (void)onCurrencyRatesDidChange:(IVVCurrencyRates)currencyRates {
-    self.exchangeModel.currencyRates = currencyRates;
+    self.transactionModel.currencyRates = currencyRates;
     if ([self generateViewModelIfNeeded]) {
         [self updateView];
     }
@@ -115,7 +115,7 @@
         return YES;
     }
     
-    if (self.exchangeModel.moneyAmounts == nil || self.exchangeModel.currencyRates == nil) {
+    if (self.transactionModel.moneyAmounts == nil || self.transactionModel.currencyRates == nil) {
         return NO;
     }
     
@@ -125,30 +125,30 @@
 }
 
 - (void)generateViewModel {
-    self.viewModel = [self.viewModelFactory generateCurrencyConvertionViewModelWithMoneyAmounts:self.exchangeModel.moneyAmounts
-                                                                                  currencyRates:self.exchangeModel.currencyRates];
+    self.viewModel = [self.viewModelFactory generateCurrencyConvertionViewModelWithMoneyAmounts:self.transactionModel.moneyAmounts
+                                                                                  currencyRates:self.transactionModel.currencyRates];
     
     // TODO: refactor currency type recieving
     IVVCurrencyType initialCurrencyFromType = [[self.viewModel.exchangeFromViewModel.currencyViewModeles firstObject] currencyType];
     IVVCurrencyType initialCurrencyToType = [[self.viewModel.exchangeToViewModel.currencyViewModeles firstObject] currencyType];
-    self.exchangeModel.currencyToType = initialCurrencyToType;
-    self.exchangeModel.currencyFromType = initialCurrencyFromType;
+    self.transactionModel.currencyToType = initialCurrencyToType;
+    self.transactionModel.currencyFromType = initialCurrencyFromType;
 }
 
 - (void)updateView {
-    [self validateExchangeModel];
-    BOOL exchangeAvaliable = [self.validator validateExchangeAvailabilityWithTransactionModel:self.exchangeModel];
+    [self validateTransactionModel];
+    BOOL exchangeAvaliable = [self.validator validateExchangeAvailabilityWithTransactionModel:self.transactionModel];
     
     self.viewModel = [self.viewModelFactory enrichCurrencyConvertionViewModel:self.viewModel
-                                                            withExchangeModel:self.exchangeModel
+                                                            withTransactionModel:self.transactionModel
                                                             exchangeAvaliable:exchangeAvaliable];
 
     [self.view configWithViewModel:self.viewModel];
 }
 
-- (void)validateExchangeModel {
-    BOOL transactionValid = [self.validator validateTransactionWithTransactionModel:self.exchangeModel];
-    self.exchangeModel.transactionValid = transactionValid;
+- (void)validateTransactionModel {
+    BOOL transactionValid = [self.validator validateTransactionWithTransactionModel:self.transactionModel];
+    self.transactionModel.transactionValid = transactionValid;
 }
 
 @end

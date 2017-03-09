@@ -1,5 +1,5 @@
 //
-//  IVVCurrencyConvertionExchangeModel.h
+//  IVVCurrencyTransacrionModel.h
 //  AwesomeCurrencyConverter
 //
 //  Created by Vladimir Ignatov on 05/03/2017.
@@ -11,7 +11,7 @@
 #import "IVVCurrencyConstants.h"
 #import "IVVModelConstants.h"
 
-@interface IVVCurrencyConvertionExchangeModel : NSObject
+@interface IVVCurrencyTransacrionModel : NSObject
 
 @property (nonatomic, strong) NSDecimalNumber *exchangeAmount;
 @property (nonatomic, assign) IVVCurrencyType currencyFromType;

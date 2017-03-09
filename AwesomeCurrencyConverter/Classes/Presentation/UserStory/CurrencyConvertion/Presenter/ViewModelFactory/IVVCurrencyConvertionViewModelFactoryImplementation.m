@@ -33,13 +33,13 @@
 }
 
 - (IVVCurrencyConvertionViewModel *)enrichCurrencyConvertionViewModel:(IVVCurrencyConvertionViewModel *)viewModel
-                                                    withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel
+                                                    withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel
                                                     exchangeAvaliable:(BOOL)exchangeAvaliable {
     viewModel.exchangeFromViewModel = [self.exchangeCurrencyFactory enrichExchangeFromListViewModel:viewModel.exchangeFromViewModel
-                                                                           withExchangeModel:exchangeModel];
+                                                                           withTransactionModel:transactionModel];
     
     viewModel.exchangeToViewModel = [self.exchangeCurrencyFactory enrichExchangeToListViewModel:viewModel.exchangeToViewModel
-                                                                          withExchangeModel:exchangeModel];
+                                                                          withTransactionModel:transactionModel];
     
     viewModel.exchangeEnambled = exchangeAvaliable;
     

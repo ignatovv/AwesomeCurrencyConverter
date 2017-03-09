@@ -18,7 +18,7 @@
                                                                           currencyRates:(IVVCurrencyRates)currencyRates;
 
 - (IVVCurrencyConvertionViewModel *)enrichCurrencyConvertionViewModel:(IVVCurrencyConvertionViewModel *)viewModel
-                                                    withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel
+                                                    withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel
                                                     exchangeAvaliable:(BOOL)exchangeAvaliable;
 
 @end 

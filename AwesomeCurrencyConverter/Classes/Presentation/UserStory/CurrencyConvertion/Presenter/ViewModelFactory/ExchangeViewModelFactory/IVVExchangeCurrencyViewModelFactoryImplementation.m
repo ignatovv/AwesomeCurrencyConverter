@@ -74,20 +74,20 @@ static NSString * const IVVMoneyAmountZero = @"0";
 }
 
 - (IVVExchangeFromListViewModel *)enrichExchangeFromListViewModel:(IVVExchangeFromListViewModel *)viewModel
-                                                withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel {
+                                                withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel {
     NSMutableArray *currencyViewModeles = [NSMutableArray array];
     
     for (IVVExchangeCurrencyFromViewModel *currencyViewModel in viewModel.currencyViewModeles) {
-        currencyViewModel.exchangeAmount = [self moneyAmountStringWithAmount:exchangeModel.exchangeAmount];
+        currencyViewModel.exchangeAmount = [self moneyAmountStringWithAmount:transactionModel.exchangeAmount];
         
         IVVCurrencyType currencyType = currencyViewModel.currencyType;
-        IVVMoneyAmount *moneyAmount = [exchangeModel.moneyAmounts moneyAmountWithCurrency:currencyType];
+        IVVMoneyAmount *moneyAmount = [transactionModel.moneyAmounts moneyAmountWithCurrency:currencyType];
         NSString *moneyAmountString = [self moneyAmountWithType:currencyType
                                                          amount:moneyAmount.moneyAmount];
         currencyViewModel.currencyAmount = moneyAmountString;
         
-        if (exchangeModel.currencyFromType == currencyType) {
-            currencyViewModel.errorState = !exchangeModel.transactionValid;
+        if (transactionModel.currencyFromType == currencyType) {
+            currencyViewModel.errorState = !transactionModel.transactionValid;
         }
         
         [currencyViewModeles addObject:currencyViewModel];
@@ -98,23 +98,23 @@ static NSString * const IVVMoneyAmountZero = @"0";
 }
 
 - (IVVExchangeToListViewModel *)enrichExchangeToListViewModel:(IVVExchangeToListViewModel *)viewModel
-                                            withExchangeModel:(IVVCurrencyTransacrionModel *)exchangeModel {
+                                            withTransactionModel:(IVVCurrencyTransacrionModel *)transactionModel {
     NSMutableArray *currencyViewModeles = [NSMutableArray array];
     
     for (IVVExchangeCurrencyToViewModel *currencyViewModel in viewModel.currencyViewModeles) {
-        NSDecimalNumber *exchangeAmount = [self.currencyConverter convertCurrency:exchangeModel.currencyFromType
+        NSDecimalNumber *exchangeAmount = [self.currencyConverter convertCurrency:transactionModel.currencyFromType
                                                                        toCurrency:currencyViewModel.currencyType
-                                                                withCurrencyRates:exchangeModel.currencyRates
-                                                                           amount:exchangeModel.exchangeAmount];
+                                                                withCurrencyRates:transactionModel.currencyRates
+                                                                           amount:transactionModel.exchangeAmount];
         currencyViewModel.exchangeAmount = [self moneyAmountStringWithAmount:exchangeAmount];
         IVVCurrencyType currencyTypeTo = currencyViewModel.currencyType;
-        NSString *exchangeRate = [self exchangeRateWithCurrencyRateTo:exchangeModel.currencyFromType
+        NSString *exchangeRate = [self exchangeRateWithCurrencyRateTo:transactionModel.currencyFromType
                                                      CurrencyRateFrom:currencyTypeTo
-                                                        currencyRates:exchangeModel.currencyRates];
+                                                        currencyRates:transactionModel.currencyRates];
         currencyViewModel.exchangeRate = exchangeRate;
         
         IVVCurrencyType currencyType = currencyViewModel.currencyType;
-        IVVMoneyAmount *moneyAmount = [exchangeModel.moneyAmounts moneyAmountWithCurrency:currencyType];
+        IVVMoneyAmount *moneyAmount = [transactionModel.moneyAmounts moneyAmountWithCurrency:currencyType];
         
         NSString *moneyAmountString = [self moneyAmountWithType:currencyType
                                                          amount:moneyAmount.moneyAmount];
