@@ -15,6 +15,7 @@
 // Classes
 #import "IVVCurrencyConverterImplementation.h"
 #import "IVVCurrencyRatesProviderImplementation.h"
+#import "IVVMoneyStorageImplementation.h"
 
 
 @implementation IVVHelperAssemblyImplementationImplementation
@@ -34,5 +35,14 @@
                                                     with:[self.coreAssembly scheduler]];
                           }];
 }
+
+- (id<IVVMoneyStorage>)moneyStorage {
+    return [TyphoonDefinition withClass:[IVVMoneyStorageImplementation class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition injectProperty:@selector(presistentStore)
+                                                    with:[self.coreAssembly presistentStore]];
+                          }];
+}
+
 
 @end

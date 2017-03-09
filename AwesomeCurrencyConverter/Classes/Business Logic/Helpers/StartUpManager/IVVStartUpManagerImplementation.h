@@ -14,7 +14,6 @@
 
 @interface IVVStartUpManagerImplementation : NSObject <IVVStartUpManager>
 
-@property (nonatomic, strong) IVVWelocmeAssembly* welcomeAssembly;
 @property (nonatomic, strong) IVVStoryboardAssembly *storyboardAssembly;
 
 @end

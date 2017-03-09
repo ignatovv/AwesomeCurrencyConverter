@@ -60,19 +60,9 @@
                               definition.scope = TyphoonScopeLazySingleton;
                               
                               [definition injectProperty:@selector(moneyStorage)
-                                                    with:[self moneyStorage]];
+                                                    with:[self.helperAssembly moneyStorage]];
                               [definition injectProperty:@selector(currencyConverter)
                                                     with:[self.helperAssembly currencyConverter]];
-                          }];
-}
-
-#pragma mark - Storage
-
-- (id<IVVMoneyStorage>)moneyStorage {
-    return [TyphoonDefinition withClass:[IVVMoneyStorageImplementation class]
-                          configuration:^(TyphoonDefinition *definition) {
-                              [definition injectProperty:@selector(presistentStore)
-                                                    with:[self.coreAssembly presistentStore]];
                           }];
 }
 

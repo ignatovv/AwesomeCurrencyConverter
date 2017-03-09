@@ -15,4 +15,6 @@
 
 - (id<IVVCurrencyRatesProvider>)currencyRatesProvider;
 
+- (id<IVVMoneyStorage>)moneyStorage;
+
 @end

@@ -265,6 +265,7 @@
 			children = (
 				B3026AA91E6CBCD3007D7090 /* CurrencyConverter */,
 				B3B923841E6F62E60041B51B /* CuurencyProvider */,
+				B3026AB01E6CBDC7007D7090 /* MoneyStorage */,
 				B3026ABF1E6DE996007D7090 /* StartUpManager */,
 			);
 			path = Helpers;
@@ -300,7 +301,6 @@
 		B3026AAB1E6CBCE7007D7090 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				B3026AB01E6CBDC7007D7090 /* MoneyStorage */,
 				B3026AB11E6CBDEA007D7090 /* PresistentStore */,
 			);
 			path = Storage;
@@ -313,6 +313,7 @@
 				B3026AAC1E6CBD06007D7090 /* IVVMoneyStorageImplementation.h */,
 				B3026AAD1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m */,
 			);
+			name = MoneyStorage;
 			path = MoneyStorage;
 			sourceTree = "<group>";
 		};
@@ -749,10 +750,10 @@
 		B3D0B25B1E6AD4B60026469D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B3D0B26B1E6AD4B60026469D /* Main.storyboard */,
 				B3D0B25E1E6AD4B60026469D /* Common */,
 				B3D0B2661E6AD4B60026469D /* UserStory */,
 				B3D0B25C1E6AD4B60026469D /* LaunchScreen.storyboard */,
+				B3D0B26B1E6AD4B60026469D /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -1264,7 +1265,7 @@
 				B3D0B26C1E6AD4B60026469D /* Base */,
 			);
 			name = Main.storyboard;
-			path = UserStory/.;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
