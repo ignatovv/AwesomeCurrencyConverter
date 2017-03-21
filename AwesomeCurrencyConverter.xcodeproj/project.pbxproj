@@ -89,9 +89,9 @@
 		B3026AAC1E6CBD06007D7090 /* IVVMoneyStorageImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVMoneyStorageImplementation.h; sourceTree = "<group>"; };
 		B3026AAD1E6CBD06007D7090 /* IVVMoneyStorageImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVMoneyStorageImplementation.m; sourceTree = "<group>"; };
 		B3026AAF1E6CBD17007D7090 /* IVVMoneyStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVMoneyStorage.h; sourceTree = "<group>"; };
-		B3026AB21E6CBE02007D7090 /* IVVPresistentStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IVVPresistentStore.h; path = IVVPresistentStore.h; sourceTree = "<group>"; };
-		B3026AB31E6CBE42007D7090 /* IVVPresistentStoreImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IVVPresistentStoreImplementation.h; path = IVVPresistentStoreImplementation.h; sourceTree = "<group>"; };
-		B3026AB41E6CBE42007D7090 /* IVVPresistentStoreImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IVVPresistentStoreImplementation.m; path = IVVPresistentStoreImplementation.m; sourceTree = "<group>"; };
+		B3026AB21E6CBE02007D7090 /* IVVPresistentStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVPresistentStore.h; sourceTree = "<group>"; };
+		B3026AB31E6CBE42007D7090 /* IVVPresistentStoreImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVPresistentStoreImplementation.h; sourceTree = "<group>"; };
+		B3026AB41E6CBE42007D7090 /* IVVPresistentStoreImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVPresistentStoreImplementation.m; sourceTree = "<group>"; };
 		B3026AB71E6CC643007D7090 /* IVVHelperAssemblyImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVVHelperAssemblyImplementation.h; sourceTree = "<group>"; };
 		B3026AB81E6CC643007D7090 /* IVVHelperAssemblyImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IVVHelperAssemblyImplementation.m; sourceTree = "<group>"; };
 		B3026ABB1E6CE37E007D7090 /* IVVCurrencyCovertionValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVVCurrencyCovertionValidator.h; sourceTree = "<group>"; };
@@ -305,7 +305,6 @@
 				B3026AB31E6CBE42007D7090 /* IVVPresistentStoreImplementation.h */,
 				B3026AB41E6CBE42007D7090 /* IVVPresistentStoreImplementation.m */,
 			);
-			name = PresistentStore;
 			path = PresistentStore;
 			sourceTree = "<group>";
 		};
@@ -624,7 +623,6 @@
 				B3B23CBB1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.h */,
 				B3B23CBC1E6C6812009EBDE6 /* IVVCurrencyTransacrionModel.m */,
 			);
-			name = TransactionModel;
 			path = TransactionModel;
 			sourceTree = "<group>";
 		};
@@ -1361,6 +1359,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/AwesomeCurrencyConverter-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1400,6 +1399,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/AwesomeCurrencyConverter-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/$(PROJECT_NAME)/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
